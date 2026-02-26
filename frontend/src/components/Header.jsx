@@ -59,7 +59,11 @@ const Header = () => {
           {/* Desktop Navigation */}
           <nav className="hidden lg:flex items-center flex-1 justify-end">
             {/* Navigation Links - with filled background container */}
-            <div className="flex items-center space-x-10 px-8 py-3 rounded-sm bg-white/10 backdrop-blur-md border border-white/20 mr-12">
+            <div className={`flex items-center space-x-10 px-8 py-3 rounded-sm backdrop-blur-md border transition-all duration-300 mr-12 ${
+              isScrolled
+                ? 'bg-gray-50/80 border-gray-200'
+                : 'bg-white/10 border-white/20'
+            }`}>
               {[
                 { key: 'home', id: 'hero' },
                 { key: 'apartment', id: 'apartment' },
@@ -70,13 +74,15 @@ const Header = () => {
                 <button
                   key={item.key}
                   onClick={() => scrollToSection(item.id)}
-                  className={`text-sm font-light tracking-[0.1em] transition-all duration-300 hover:text-white relative group ${
-                    isScrolled ? 'text-gray-700' : 'text-white'
+                  className={`text-sm font-light tracking-[0.1em] transition-all duration-300 relative group ${
+                    isScrolled ? 'text-gray-700 hover:text-[#4A7C9E]' : 'text-white hover:text-white'
                   }`}
                   style={{ fontFamily: "'Montserrat', sans-serif" }}
                 >
                   {t.nav[item.key]}
-                  <span className="absolute bottom-0 left-0 w-0 h-[1px] bg-white transition-all duration-300 group-hover:w-full"></span>
+                  <span className={`absolute bottom-0 left-0 w-0 h-[1px] transition-all duration-300 group-hover:w-full ${
+                    isScrolled ? 'bg-[#4A7C9E]' : 'bg-white'
+                  }`}></span>
                 </button>
               ))}
             </div>

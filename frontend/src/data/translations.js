@@ -12,7 +12,7 @@ export const translations = {
     
     // Hero Section
     hero: {
-      title: 'Il Tuo Balcone sul Mare Adriatico',
+      title: 'Hinode Centro – Luxury Sea View Apartment in Vieste',
       subtitle: 'Eleganza, storia e vista panoramica nel cuore del centro storico di Vieste',
       cta: 'Verifica Disponibilità',
       ctaSecondary: 'Scopri di Più',
@@ -160,7 +160,7 @@ export const translations = {
     
     // Hero Section
     hero: {
-      title: 'Your Balcony Over the Adriatic Sea',
+      title: 'Hinode Centro – Luxury Sea View Apartment in Vieste',
       subtitle: 'Elegance, history, and panoramic views in the heart of Vieste\'s old town',
       cta: 'Check Availability',
       ctaSecondary: 'Discover More',

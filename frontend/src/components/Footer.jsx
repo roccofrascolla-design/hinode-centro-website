@@ -85,27 +85,27 @@ const Footer = () => {
                   className="text-sm text-gray-600 font-light"
                   style={{ fontFamily: "'Montserrat', sans-serif" }}
                 >
-                  Centro Storico, Vieste (FG), Italia
+                  Via Santa Maria di Merino 1, Vieste (FG), Puglia, Italia
                 </span>
               </li>
               <li className="flex items-start space-x-3">
                 <Mail size={18} className="text-[#4A7C9E] mt-1 flex-shrink-0" />
                 <a
-                  href="mailto:info@hinodecentro.com"
+                  href="mailto:hinodecentrovieste@gmail.com"
                   className="text-sm text-gray-600 hover:text-[#4A7C9E] transition-colors font-light"
                   style={{ fontFamily: "'Montserrat', sans-serif" }}
                 >
-                  info@hinodecentro.com
+                  hinodecentrovieste@gmail.com
                 </a>
               </li>
               <li className="flex items-start space-x-3">
                 <Phone size={18} className="text-[#4A7C9E] mt-1 flex-shrink-0" />
                 <a
-                  href="tel:+393401234567"
+                  href="tel:+393405079259"
                   className="text-sm text-gray-600 hover:text-[#4A7C9E] transition-colors font-light"
                   style={{ fontFamily: "'Montserrat', sans-serif" }}
                 >
-                  +39 340 123 4567
+                  +39 340 507 9259
                 </a>
               </li>
             </ul>

@@ -100,14 +100,14 @@ const Location = () => {
           <div className="bg-white rounded-lg shadow-lg overflow-hidden">
             <div className="aspect-w-16 aspect-h-9 h-96">
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3006.8287!2d16.1768!3d41.8828!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1347d1c5e5e5e5e5%3A0x5e5e5e5e5e5e5e5!2sVieste%2C%20FG%2C%20Italy!5e0!3m2!1sen!2s!4v1234567890"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3006.9!2d16.1768!3d41.8828!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1347d1ffb6e5e5e5%3A0x5e5e5e5e5e5e5e5!2sVia%20Santa%20Maria%20di%20Merino%2C%201%2C%2071019%20Vieste%20FG%2C%20Italy!5e0!3m2!1sen!2s!4v1234567890"
                 width="100%"
                 height="100%"
                 style={{ border: 0 }}
                 allowFullScreen=""
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
-                title="Vieste Location Map"
+                title="Hinode Centro - Via Santa Maria di Merino 1, Vieste"
               />
             </div>
           </div>

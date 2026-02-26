@@ -46,11 +46,11 @@ const Booking = () => {
     });
   };
 
-  const whatsappNumber = '+393401234567'; // Replace with actual number
+  const whatsappNumber = '+393405079259';
   const whatsappMessage = encodeURIComponent(
     t.language === 'it'
-      ? 'Ciao! Vorrei informazioni su Hinode Centro.'
-      : 'Hello! I would like information about Hinode Centro.'
+      ? 'Ciao! Vorrei informazioni su Hinode Centro – Luxury Sea View Apartment in Vieste.'
+      : 'Hello! I would like information about Hinode Centro – Luxury Sea View Apartment in Vieste.'
   );
 
   return (

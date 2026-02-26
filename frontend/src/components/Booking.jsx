@@ -226,8 +226,8 @@ const Booking = () => {
             {/* Image */}
             <div className="hidden lg:block">
               <img
-                src="https://customer-assets.emergentagent.com/job_castello-balcony/artifacts/vujy3i5h_450922855.jpg"
-                alt="Vieste coastline with turquoise water"
+                src="https://images.unsplash.com/photo-1661100193729-5b60a36d6d61"
+                alt="Vieste sunset over the sea"
                 className="w-full h-80 object-cover rounded-lg shadow-lg"
               />
             </div>

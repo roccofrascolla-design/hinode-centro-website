@@ -23,7 +23,7 @@ const Hero = () => {
           loop
           playsInline
           className="w-full h-full object-cover"
-          poster="https://images.unsplash.com/photo-1661100193729-5b60a36d6d61"
+          poster="https://customer-assets.emergentagent.com/job_castello-balcony/artifacts/vujy3i5h_450922855.jpg"
         >
           {/* Primary video source - replace with actual video URL */}
           <source
@@ -32,8 +32,8 @@ const Hero = () => {
           />
           {/* Fallback image for browsers that don't support video */}
           <img
-            src="https://images.unsplash.com/photo-1661100193729-5b60a36d6d61"
-            alt="Vieste coastline at sunset"
+            src="https://customer-assets.emergentagent.com/job_castello-balcony/artifacts/vujy3i5h_450922855.jpg"
+            alt="Vieste coastline with turquoise water"
             className="w-full h-full object-cover"
           />
         </video>

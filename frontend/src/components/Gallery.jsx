@@ -7,36 +7,44 @@ const Gallery = () => {
 
   const images = [
     {
-      url: 'https://customer-assets.emergentagent.com/job_castello-balcony/artifacts/8tqcd618_DSC_1389.jpeg',
-      alt: 'Rooftop terrace with sea view',
+      url: 'https://customer-assets.emergentagent.com/job_castello-balcony/artifacts/0yfrjq5g_DSC_3618.jpeg',
+      alt: 'Panoramic sea view from Hinode Centro',
+    },
+    {
+      url: 'https://customer-assets.emergentagent.com/job_castello-balcony/artifacts/z0w881aj_DSC_3530.jpeg',
+      alt: 'Living area with dining space',
     },
     {
       url: 'https://customer-assets.emergentagent.com/job_castello-balcony/artifacts/8ek42vx1_DSC_3536.jpeg',
-      alt: 'Living area with kitchenette',
+      alt: 'Living area with fully equipped kitchenette',
     },
     {
       url: 'https://customer-assets.emergentagent.com/job_castello-balcony/artifacts/1f2ipoxl_DSC_3551.jpeg',
       alt: 'Bedroom with sea blue accents',
     },
     {
+      url: 'https://customer-assets.emergentagent.com/job_castello-balcony/artifacts/h6uohd0o_DSC_3567.jpeg',
+      alt: 'Modern bathroom with elegant finishes',
+    },
+    {
       url: 'https://customer-assets.emergentagent.com/job_castello-balcony/artifacts/uz270r2i_DSC_3603.jpeg',
       alt: 'Elegant sitting area',
     },
     {
-      url: 'https://customer-assets.emergentagent.com/job_castello-balcony/artifacts/xm0tns05_DSC_3617.jpeg',
-      alt: 'Interior detail',
+      url: 'https://customer-assets.emergentagent.com/job_castello-balcony/artifacts/8tqcd618_DSC_1389.jpeg',
+      alt: 'Rooftop terrace with sea view',
+    },
+    {
+      url: 'https://customer-assets.emergentagent.com/job_castello-balcony/artifacts/k5sztf5m_DSC_3630.jpeg',
+      alt: 'Historic center of Vieste with lighthouse',
+    },
+    {
+      url: 'https://customer-assets.emergentagent.com/job_castello-balcony/artifacts/283xch86_DSC_3635.jpeg',
+      alt: 'Hinode brass nameplate',
     },
     {
       url: 'https://images.unsplash.com/photo-1661100193729-5b60a36d6d61',
       alt: 'Vieste sunset coastline',
-    },
-    {
-      url: 'https://images.unsplash.com/photo-1660892544428-72a8cf4148c2',
-      alt: 'Pizzomunno beach',
-    },
-    {
-      url: 'https://images.pexels.com/photos/28236505/pexels-photo-28236505.jpeg',
-      alt: 'Historic center white buildings',
     },
   ];
 

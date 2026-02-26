@@ -9,7 +9,7 @@ const Apartment = () => {
     {
       title: t.apartment.livingTitle,
       text: t.apartment.livingText,
-      image: 'https://customer-assets.emergentagent.com/job_castello-balcony/artifacts/8ek42vx1_DSC_3536.jpeg',
+      image: 'https://customer-assets.emergentagent.com/job_castello-balcony/artifacts/z0w881aj_DSC_3530.jpeg',
     },
     {
       title: t.apartment.bedroomTitle,
@@ -19,7 +19,7 @@ const Apartment = () => {
     {
       title: t.apartment.bathroomTitle,
       text: t.apartment.bathroomText,
-      image: 'https://customer-assets.emergentagent.com/job_castello-balcony/artifacts/uz270r2i_DSC_3603.jpeg',
+      image: 'https://customer-assets.emergentagent.com/job_castello-balcony/artifacts/h6uohd0o_DSC_3567.jpeg',
     },
   ];
 

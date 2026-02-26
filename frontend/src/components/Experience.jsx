@@ -104,8 +104,8 @@ const Experience = () => {
         <div className="max-w-6xl mx-auto mt-20">
           <div className="relative overflow-hidden rounded-lg shadow-2xl group">
             <img
-              src="https://images.unsplash.com/photo-1660892544428-72a8cf4148c2"
-              alt="Vieste beach and Pizzomunno"
+              src="https://customer-assets.emergentagent.com/job_castello-balcony/artifacts/0yfrjq5g_DSC_3618.jpeg"
+              alt="Sea view from Hinode Centro"
               className="w-full h-96 lg:h-[500px] object-cover transition-transform duration-700 group-hover:scale-105"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent" />

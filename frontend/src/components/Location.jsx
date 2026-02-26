@@ -78,8 +78,8 @@ const Location = () => {
             </h3>
             <div className="relative">
               <img
-                src="https://customer-assets.emergentagent.com/job_castello-balcony/artifacts/8tqcd618_DSC_1389.jpeg"
-                alt="Vieste rooftop terrace view"
+                src="https://customer-assets.emergentagent.com/job_castello-balcony/artifacts/k5sztf5m_DSC_3630.jpeg"
+                alt="Vieste historic center with lighthouse"
                 className="w-full h-80 object-cover rounded-lg shadow-lg"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent rounded-lg" />

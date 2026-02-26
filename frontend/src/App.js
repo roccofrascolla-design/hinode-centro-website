@@ -11,6 +11,7 @@ import Location from "./components/Location";
 import Experience from "./components/Experience";
 import Gallery from "./components/Gallery";
 import Booking from "./components/Booking";
+import HouseRules from "./components/HouseRules";
 import FAQ from "./components/FAQ";
 import Footer from "./components/Footer";
 
@@ -28,6 +29,7 @@ function App() {
           <Experience />
           <Gallery />
           <Booking />
+          <HouseRules />
           <FAQ />
         </main>
         <Footer />

@@ -14,13 +14,29 @@ const Hero = () => {
 
   return (
     <section id="hero" className="relative h-screen w-full overflow-hidden">
-      {/* Background Image with Overlay */}
+      {/* Background Video with Overlay */}
       <div className="absolute inset-0">
-        <img
-          src="https://images.unsplash.com/photo-1661100193729-5b60a36d6d61"
-          alt="Vieste coastline at sunset"
+        {/* Video Background */}
+        <video
+          autoPlay
+          muted
+          loop
+          playsInline
           className="w-full h-full object-cover"
-        />
+          poster="https://images.unsplash.com/photo-1661100193729-5b60a36d6d61"
+        >
+          {/* Primary video source - replace with actual video URL */}
+          <source
+            src="https://cdn.coverr.co/videos/coverr-calm-sea-waves-at-sunset-6273/1080p.mp4"
+            type="video/mp4"
+          />
+          {/* Fallback image for browsers that don't support video */}
+          <img
+            src="https://images.unsplash.com/photo-1661100193729-5b60a36d6d61"
+            alt="Vieste coastline at sunset"
+            className="w-full h-full object-cover"
+          />
+        </video>
         <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-black/30 to-black/50" />
       </div>
 

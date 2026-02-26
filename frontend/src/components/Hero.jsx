@@ -27,14 +27,22 @@ const Hero = () => {
       {/* Content */}
       <div className="relative h-full flex items-center justify-center">
         <div className="container mx-auto px-4 lg:px-8 text-center">
-          <div className="max-w-4xl mx-auto space-y-8 animate-fade-in">
-            {/* Main Title */}
-            <h1
-              className="text-5xl md:text-6xl lg:text-7xl font-light text-white leading-tight tracking-wide"
-              style={{ fontFamily: "'Cormorant Garamond', serif" }}
-            >
-              {t.hero.title}
-            </h1>
+          <div className="max-w-5xl mx-auto space-y-10 animate-fade-in">
+            {/* Main Title - Two Lines */}
+            <div>
+              <h1
+                className="text-5xl md:text-6xl lg:text-7xl font-light text-white leading-tight tracking-[0.05em] mb-4"
+                style={{ fontFamily: "'Cormorant Garamond', serif" }}
+              >
+                {t.hero.titleLine1}
+              </h1>
+              <h2
+                className="text-3xl md:text-4xl lg:text-5xl font-light text-white/95 leading-relaxed tracking-wide"
+                style={{ fontFamily: "'Cormorant Garamond', serif" }}
+              >
+                {t.hero.titleLine2}
+              </h2>
+            </div>
 
             {/* Subtitle */}
             <p

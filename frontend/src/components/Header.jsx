@@ -3,7 +3,7 @@ import { useLanguage } from '../context/LanguageContext';
 import { Menu, X } from 'lucide-react';
 
 const Header = () => {
-  const { language, toggleLanguage, t } = useLanguage();
+  const { language, setLanguage, t } = useLanguage();
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
@@ -27,19 +27,19 @@ const Header = () => {
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
         isScrolled
-          ? 'bg-white/98 backdrop-blur-md shadow-sm py-4'
-          : 'bg-transparent py-6 lg:py-7'
+          ? 'bg-white/98 backdrop-blur-md shadow-sm py-5'
+          : 'bg-transparent py-8 lg:py-9'
       }`}
     >
-      <div className="container mx-auto px-6 lg:px-12">
+      <div className="container mx-auto px-8 lg:px-16">
         <div className="flex items-center justify-between">
           {/* Logo */}
           <button
             onClick={() => scrollToSection('hero')}
-            className="flex flex-col items-start group"
+            className="flex flex-col items-start group mr-16"
           >
             <span
-              className={`text-2xl lg:text-3xl font-light tracking-[0.15em] transition-colors duration-300 ${
+              className={`text-3xl lg:text-4xl font-light tracking-[0.18em] transition-colors duration-300 ${
                 isScrolled ? 'text-gray-900' : 'text-white'
               } group-hover:text-[#4A7C9E]`}
               style={{ fontFamily: "'Cormorant Garamond', serif" }}
@@ -47,7 +47,7 @@ const Header = () => {
               HINODE
             </span>
             <span
-              className={`text-[10px] lg:text-xs tracking-[0.25em] transition-colors duration-300 ${
+              className={`text-xs tracking-[0.28em] transition-colors duration-300 mt-0.5 ${
                 isScrolled ? 'text-gray-600' : 'text-white/90'
               }`}
               style={{ fontFamily: "'Montserrat', sans-serif" }}
@@ -57,9 +57,9 @@ const Header = () => {
           </button>
 
           {/* Desktop Navigation */}
-          <nav className="hidden lg:flex items-center">
+          <nav className="hidden lg:flex items-center flex-1 justify-end">
             {/* Navigation Links */}
-            <div className="flex items-center space-x-10 mr-12">
+            <div className="flex items-center space-x-14">
               {[
                 { key: 'home', id: 'hero' },
                 { key: 'apartment', id: 'apartment' },
@@ -70,7 +70,7 @@ const Header = () => {
                 <button
                   key={item.key}
                   onClick={() => scrollToSection(item.id)}
-                  className={`text-sm font-light tracking-[0.08em] transition-all duration-300 hover:text-[#4A7C9E] relative group ${
+                  className={`text-sm font-light tracking-[0.1em] transition-all duration-300 hover:text-[#4A7C9E] relative group ${
                     isScrolled ? 'text-gray-700' : 'text-white'
                   }`}
                   style={{ fontFamily: "'Montserrat', sans-serif" }}
@@ -81,44 +81,66 @@ const Header = () => {
               ))}
             </div>
             
-            {/* Right Section: CTA + Language */}
-            <div className="flex items-center space-x-6">
+            {/* Right Section: CTA + Language - with extra spacing */}
+            <div className="flex items-center ml-16">
               {/* CTA Button */}
               <button
                 onClick={() => scrollToSection('booking')}
-                className="px-7 py-2.5 bg-[#4A7C9E] text-white text-sm font-light tracking-[0.08em] rounded-sm hover:bg-[#3d6682] transition-all duration-300 hover:shadow-lg hover:scale-105"
+                className="px-8 py-3 bg-[#4A7C9E] text-white text-sm font-light tracking-[0.1em] rounded-sm hover:bg-[#3d6682] transition-all duration-300 hover:shadow-lg hover:scale-105 mr-8"
                 style={{ fontFamily: "'Montserrat', sans-serif" }}
               >
                 {t.nav.booking}
               </button>
 
-              {/* Language Toggle */}
-              <button
-                onClick={toggleLanguage}
-                className={`px-4 py-2 text-xs font-medium tracking-[0.12em] border rounded-sm transition-all duration-300 ${
-                  isScrolled
-                    ? 'border-gray-300 text-gray-700 hover:bg-gray-50'
-                    : 'border-white/50 text-white hover:bg-white/10'
-                }`}
-                style={{ fontFamily: "'Montserrat', sans-serif" }}
+              {/* Language Toggle - 4 languages */}
+              <div className="flex items-center space-x-1 border rounded-sm overflow-hidden"
+                style={{
+                  borderColor: isScrolled ? '#d1d5db' : 'rgba(255,255,255,0.5)'
+                }}
               >
-                {language === 'it' ? 'EN' : 'IT'}
-              </button>
+                {['it', 'en', 'fr', 'de'].map((lang, index) => (
+                  <button
+                    key={lang}
+                    onClick={() => setLanguage(lang)}
+                    className={`px-3 py-2 text-xs font-medium tracking-[0.12em] transition-all duration-300 ${
+                      language === lang
+                        ? 'bg-[#4A7C9E] text-white'
+                        : isScrolled
+                        ? 'text-gray-700 hover:bg-gray-50'
+                        : 'text-white hover:bg-white/10'
+                    }`}
+                    style={{ fontFamily: "'Montserrat', sans-serif" }}
+                  >
+                    {lang.toUpperCase()}
+                  </button>
+                ))}
+              </div>
             </div>
           </nav>
 
           {/* Mobile Menu Button */}
           <div className="lg:hidden flex items-center space-x-4">
-            <button
-              onClick={toggleLanguage}
-              className={`px-3 py-1.5 text-xs font-medium tracking-wider border rounded-sm transition-all ${
-                isScrolled
-                  ? 'border-gray-300 text-gray-700'
-                  : 'border-white/50 text-white'
-              }`}
+            <div className="flex items-center space-x-1 border rounded-sm overflow-hidden"
+              style={{
+                borderColor: isScrolled ? '#d1d5db' : 'rgba(255,255,255,0.5)'
+              }}
             >
-              {language === 'it' ? 'EN' : 'IT'}
-            </button>
+              {['it', 'en', 'fr', 'de'].map((lang) => (
+                <button
+                  key={lang}
+                  onClick={() => setLanguage(lang)}
+                  className={`px-2 py-1 text-xs font-medium ${
+                    language === lang
+                      ? 'bg-[#4A7C9E] text-white'
+                      : isScrolled
+                      ? 'text-gray-700'
+                      : 'text-white'
+                  }`}
+                >
+                  {lang.toUpperCase()}
+                </button>
+              ))}
+            </div>
             <button
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
               className={`p-2 ${isScrolled ? 'text-gray-700' : 'text-white'}`}

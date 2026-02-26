@@ -755,3 +755,45 @@ translations.de = {
     rights: '© 2025 Hinode Centro. Alle Rechte vorbehalten.',
   },
 };
+
+// Update navigation text (remove articles)
+translations.it.nav.apartment = 'Appartamento';
+translations.it.nav.experience = 'Esperienza';
+
+translations.en.nav.apartment = 'Apartment';
+translations.en.nav.experience = 'Experience';
+
+translations.fr.nav.apartment = 'Appartement';
+translations.fr.nav.experience = 'Expérience';
+
+translations.de.nav.apartment = 'Wohnung';
+translations.de.nav.experience = 'Erlebnis';
+
+// Add testimonials section
+translations.it.testimonials = {
+  title: 'Cosa Dicono i Nostri Ospiti',
+  quote: 'Appartamento in pieno centro a Vieste, arredato con cura, spazioso e pulito. Rocco il proprietario gentilissimo e sempre disponibile.',
+  author: 'Elisa',
+  source: 'Booking.com',
+};
+
+translations.en.testimonials = {
+  title: 'What Guests Say About Us',
+  quote: 'Apartment in the heart of Vieste, tastefully furnished, spacious and very clean. Rocco, the owner, is extremely kind and always available.',
+  author: 'Elisa',
+  source: 'Booking.com',
+};
+
+translations.fr.testimonials = {
+  title: 'Ce Que Disent Nos Clients',
+  quote: 'Appartement en plein centre de Vieste, meublé avec goût, spacieux et très propre. Rocco, le propriétaire, est extrêmement gentil et toujours disponible.',
+  author: 'Elisa',
+  source: 'Booking.com',
+};
+
+translations.de.testimonials = {
+  title: 'Was Unsere Gäste Sagen',
+  quote: 'Wohnung im Herzen von Vieste, geschmackvoll eingerichtet, geräumig und sehr sauber. Rocco, der Eigentümer, ist äußerst freundlich und immer verfügbar.',
+  author: 'Elisa',
+  source: 'Booking.com',
+};

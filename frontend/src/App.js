@@ -2,6 +2,7 @@ import React from "react";
 import "@/App.css";
 import { LanguageProvider } from "./context/LanguageContext";
 import { Toaster } from "./components/ui/sonner";
+import SEO from "./components/SEO";
 import Header from "./components/Header";
 import Hero from "./components/Hero";
 import WhyChoose from "./components/WhyChoose";
@@ -16,6 +17,7 @@ import Footer from "./components/Footer";
 function App() {
   return (
     <LanguageProvider>
+      <SEO />
       <div className="App">
         <Header />
         <main>

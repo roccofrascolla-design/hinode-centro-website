@@ -16,7 +16,7 @@ const Hero = () => {
     <section id="hero" className="relative h-screen w-full overflow-hidden">
       {/* Background Video with Overlay */}
       <div className="absolute inset-0">
-        {/* Video Background */}
+        {/* Video Background - Aerial View */}
         <video
           autoPlay
           muted
@@ -25,19 +25,19 @@ const Hero = () => {
           className="w-full h-full object-cover"
           poster="https://customer-assets.emergentagent.com/job_castello-balcony/artifacts/vujy3i5h_450922855.jpg"
         >
-          {/* Primary video source - replace with actual video URL */}
+          {/* Primary video source - Aerial view of Vieste */}
           <source
-            src="https://cdn.coverr.co/videos/coverr-calm-sea-waves-at-sunset-6273/1080p.mp4"
+            src="https://customer-assets.emergentagent.com/job_castello-balcony/artifacts/4r0h5q6x_7031055_Above_Aerial_1280x720.mp4"
             type="video/mp4"
           />
           {/* Fallback image for browsers that don't support video */}
           <img
             src="https://customer-assets.emergentagent.com/job_castello-balcony/artifacts/vujy3i5h_450922855.jpg"
-            alt="Vieste coastline with turquoise water"
+            alt="Vieste aerial view"
             className="w-full h-full object-cover"
           />
         </video>
-        <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-black/30 to-black/50" />
+        <div className="absolute inset-0 bg-gradient-to-b from-black/50 via-black/40 to-black/60" />
       </div>
 
       {/* Content */}

@@ -40,10 +40,10 @@ const FAQ = () => {
               <AccordionItem
                 key={index}
                 value={`item-${index}`}
-                className="bg-[#F5EFE7]/30 rounded-lg px-6 border-none"
+                className="bg-[#F3EFE9]/30 rounded-lg px-6 border-none"
               >
                 <AccordionTrigger
-                  className="text-left text-lg font-light text-gray-900 hover:text-[#4A7C9E] transition-colors py-5"
+                  className="text-left text-lg font-light text-gray-900 hover:text-[#C2A878] transition-colors py-5"
                   style={{ fontFamily: "'Montserrat', sans-serif" }}
                 >
                   {faq.question}

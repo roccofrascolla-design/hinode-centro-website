@@ -10,7 +10,7 @@ const WhyChoose = () => {
       icon: Eye,
       title: t.whyChoose.feature1Title,
       text: t.whyChoose.feature1Text,
-      color: '#4A7C9E',
+      color: '#C2A878',
     },
     {
       icon: MapPin,
@@ -28,12 +28,12 @@ const WhyChoose = () => {
       icon: Heart,
       title: t.whyChoose.feature4Title,
       text: t.whyChoose.feature4Text,
-      color: '#E8DCC5',
+      color: '#D8D2C8',
     },
   ];
 
   return (
-    <section id="why-choose" className="py-20 lg:py-32 bg-gradient-to-b from-white to-[#F5EFE7]/30">
+    <section id="why-choose" className="py-20 lg:py-32 bg-gradient-to-b from-white to-[#F3EFE9]/30">
       <div className="container mx-auto px-4 lg:px-8">
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-16">

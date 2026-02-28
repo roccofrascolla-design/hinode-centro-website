@@ -10,7 +10,7 @@ const HouseRules = () => {
       icon: Clock,
       title: t.houseRules.checkinTitle,
       text: t.houseRules.checkinTime,
-      color: '#4A7C9E',
+      color: '#C2A878',
     },
     {
       icon: Clock,
@@ -28,13 +28,13 @@ const HouseRules = () => {
       icon: Cigarette,
       title: t.houseRules.smokingTitle,
       text: t.houseRules.smokingText,
-      color: '#E8DCC5',
+      color: '#D8D2C8',
     },
     {
       icon: PartyPopper,
       title: t.houseRules.partiesTitle,
       text: t.houseRules.partiesText,
-      color: '#4A7C9E',
+      color: '#C2A878',
     },
     {
       icon: Volume2,
@@ -52,7 +52,7 @@ const HouseRules = () => {
       icon: User,
       title: t.houseRules.ageTitle,
       text: t.houseRules.ageText,
-      color: '#E8DCC5',
+      color: '#D8D2C8',
     },
   ];
 
@@ -76,7 +76,7 @@ const HouseRules = () => {
             return (
               <div
                 key={index}
-                className="bg-[#F5EFE7]/30 rounded-lg p-6 hover:bg-[#E8DCC5]/40 transition-colors duration-300"
+                className="bg-[#F3EFE9]/30 rounded-lg p-6 hover:bg-[#D8D2C8]/40 transition-colors duration-300"
               >
                 <div
                   className="w-12 h-12 rounded-full flex items-center justify-center mb-4"

@@ -72,7 +72,7 @@ const Hero = () => {
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4 pt-8">
               <button
                 onClick={() => scrollToSection('booking')}
-                className="px-8 py-4 bg-[#4A7C9E] text-white text-base font-light tracking-wide rounded-sm hover:bg-[#3d6682] transition-all duration-300 hover:shadow-2xl hover:scale-105 w-full sm:w-auto"
+                className="px-8 py-4 bg-[#C2A878] text-white text-base font-light tracking-wide rounded-sm hover:bg-[#2E4A5B] transition-all duration-300 hover:shadow-2xl hover:scale-105 w-full sm:w-auto"
                 style={{ fontFamily: "'Montserrat', sans-serif" }}
               >
                 {t.hero.cta}

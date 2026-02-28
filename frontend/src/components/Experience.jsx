@@ -10,7 +10,7 @@ const Experience = () => {
       icon: Sunrise,
       title: t.experience.moment1Title,
       text: t.experience.moment1Text,
-      color: '#E8DCC5',
+      color: '#D8D2C8',
     },
     {
       icon: Footprints,
@@ -28,12 +28,12 @@ const Experience = () => {
       icon: Moon,
       title: t.experience.moment4Title,
       text: t.experience.moment4Text,
-      color: '#4A7C9E',
+      color: '#C2A878',
     },
   ];
 
   return (
-    <section id="experience" className="py-20 lg:py-32 bg-gradient-to-b from-white to-[#F5EFE7]/50">
+    <section id="experience" className="py-20 lg:py-32 bg-gradient-to-b from-white to-[#F3EFE9]/50">
       <div className="container mx-auto px-4 lg:px-8">
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-16">

@@ -6,7 +6,7 @@ const Location = () => {
   const { t } = useLanguage();
 
   return (
-    <section id="location" className="py-20 lg:py-32 bg-gradient-to-b from-[#F5EFE7]/30 to-white">
+    <section id="location" className="py-20 lg:py-32 bg-gradient-to-b from-[#F3EFE9]/30 to-white">
       <div className="container mx-auto px-4 lg:px-8">
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-16">
@@ -46,8 +46,8 @@ const Location = () => {
                   key={index}
                   className="flex items-start space-x-4 p-4 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300"
                 >
-                  <div className="flex-shrink-0 w-10 h-10 rounded-full bg-[#4A7C9E]/10 flex items-center justify-center">
-                    <MapPin size={20} className="text-[#4A7C9E]" />
+                  <div className="flex-shrink-0 w-10 h-10 rounded-full bg-[#C2A878]/10 flex items-center justify-center">
+                    <MapPin size={20} className="text-[#C2A878]" />
                   </div>
                   <div className="flex-1">
                     <p

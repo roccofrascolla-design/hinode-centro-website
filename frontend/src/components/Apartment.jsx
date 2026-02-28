@@ -111,7 +111,7 @@ const Apartment = () => {
             {amenityCategories.map((category, catIndex) => (
               <div
                 key={catIndex}
-                className="bg-[#F5EFE7]/30 rounded-lg p-6"
+                className="bg-[#F3EFE9]/30 rounded-lg p-6"
               >
                 <h4
                   className="text-lg font-light text-gray-900 mb-4"
@@ -125,7 +125,7 @@ const Apartment = () => {
                       key={index}
                       className="flex items-start space-x-2"
                     >
-                      <div className="flex-shrink-0 w-5 h-5 rounded-full bg-[#4A7C9E] flex items-center justify-center mt-0.5">
+                      <div className="flex-shrink-0 w-5 h-5 rounded-full bg-[#C2A878] flex items-center justify-center mt-0.5">
                         <Check size={12} className="text-white" />
                       </div>
                       <span

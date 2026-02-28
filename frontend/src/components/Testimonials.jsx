@@ -6,7 +6,7 @@ const Testimonials = () => {
   const { t } = useLanguage();
 
   return (
-    <section className="py-20 lg:py-32 bg-gradient-to-b from-white to-[#F5EFE7]/30">
+    <section className="py-20 lg:py-32 bg-gradient-to-b from-white to-[#F3EFE9]/30">
       <div className="container mx-auto px-4 lg:px-8">
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-16">
@@ -23,7 +23,7 @@ const Testimonials = () => {
           <div className="bg-white rounded-lg shadow-md p-8 lg:p-12 relative">
             {/* Quote Icon */}
             <div className="absolute top-6 left-6 opacity-10">
-              <Quote size={64} className="text-[#4A7C9E]" />
+              <Quote size={64} className="text-[#C2A878]" />
             </div>
 
             {/* Testimonial Content */}
@@ -37,7 +37,7 @@ const Testimonials = () => {
               
               {/* Author */}
               <div className="flex items-center space-x-4">
-                <div className="w-12 h-12 rounded-full bg-[#4A7C9E] flex items-center justify-center">
+                <div className="w-12 h-12 rounded-full bg-[#C2A878] flex items-center justify-center">
                   <span
                     className="text-white text-xl font-light"
                     style={{ fontFamily: "'Cormorant Garamond', serif" }}
@@ -63,7 +63,7 @@ const Testimonials = () => {
             </div>
 
             {/* Decorative element */}
-            <div className="absolute bottom-0 right-0 w-32 h-32 bg-gradient-to-tl from-[#E8DCC5]/20 to-transparent rounded-tl-full" />
+            <div className="absolute bottom-0 right-0 w-32 h-32 bg-gradient-to-tl from-[#D8D2C8]/20 to-transparent rounded-tl-full" />
           </div>
         </div>
       </div>

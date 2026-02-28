@@ -54,7 +54,7 @@ const Booking = () => {
   );
 
   return (
-    <section id="booking" className="py-20 lg:py-32 bg-gradient-to-b from-[#F5EFE7]/30 to-white">
+    <section id="booking" className="py-20 lg:py-32 bg-gradient-to-b from-[#F3EFE9]/30 to-white">
       <div className="container mx-auto px-4 lg:px-8">
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-16">
@@ -80,7 +80,7 @@ const Booking = () => {
                 key={index}
                 className="flex items-start space-x-3 p-4 bg-white rounded-lg shadow-sm"
               >
-                <div className="flex-shrink-0 w-6 h-6 rounded-full bg-[#4A7C9E] flex items-center justify-center mt-1">
+                <div className="flex-shrink-0 w-6 h-6 rounded-full bg-[#C2A878] flex items-center justify-center mt-1">
                   <Check size={14} className="text-white" />
                 </div>
                 <p
@@ -113,7 +113,7 @@ const Booking = () => {
                   onChange={handleChange}
                   placeholder={t.booking.namePlaceholder}
                   required
-                  className="w-full px-4 py-3 border border-gray-300 rounded-sm focus:outline-none focus:ring-2 focus:ring-[#4A7C9E] focus:border-transparent transition-all text-gray-900"
+                  className="w-full px-4 py-3 border border-gray-300 rounded-sm focus:outline-none focus:ring-2 focus:ring-[#C2A878] focus:border-transparent transition-all text-gray-900"
                   style={{ fontFamily: "'Montserrat', sans-serif" }}
                 />
               </div>
@@ -125,7 +125,7 @@ const Booking = () => {
                   onChange={handleChange}
                   placeholder={t.booking.emailPlaceholder}
                   required
-                  className="w-full px-4 py-3 border border-gray-300 rounded-sm focus:outline-none focus:ring-2 focus:ring-[#4A7C9E] focus:border-transparent transition-all text-gray-900"
+                  className="w-full px-4 py-3 border border-gray-300 rounded-sm focus:outline-none focus:ring-2 focus:ring-[#C2A878] focus:border-transparent transition-all text-gray-900"
                   style={{ fontFamily: "'Montserrat', sans-serif" }}
                 />
               </div>
@@ -136,7 +136,7 @@ const Booking = () => {
                   value={formData.phone}
                   onChange={handleChange}
                   placeholder={t.booking.phonePlaceholder}
-                  className="w-full px-4 py-3 border border-gray-300 rounded-sm focus:outline-none focus:ring-2 focus:ring-[#4A7C9E] focus:border-transparent transition-all text-gray-900"
+                  className="w-full px-4 py-3 border border-gray-300 rounded-sm focus:outline-none focus:ring-2 focus:ring-[#C2A878] focus:border-transparent transition-all text-gray-900"
                   style={{ fontFamily: "'Montserrat', sans-serif" }}
                 />
               </div>
@@ -149,7 +149,7 @@ const Booking = () => {
                     onChange={handleChange}
                     placeholder={t.booking.checkinPlaceholder}
                     required
-                    className="w-full px-4 py-3 border border-gray-300 rounded-sm focus:outline-none focus:ring-2 focus:ring-[#4A7C9E] focus:border-transparent transition-all text-gray-900"
+                    className="w-full px-4 py-3 border border-gray-300 rounded-sm focus:outline-none focus:ring-2 focus:ring-[#C2A878] focus:border-transparent transition-all text-gray-900"
                     style={{ fontFamily: "'Montserrat', sans-serif" }}
                   />
                 </div>
@@ -161,7 +161,7 @@ const Booking = () => {
                     onChange={handleChange}
                     placeholder={t.booking.checkoutPlaceholder}
                     required
-                    className="w-full px-4 py-3 border border-gray-300 rounded-sm focus:outline-none focus:ring-2 focus:ring-[#4A7C9E] focus:border-transparent transition-all text-gray-900"
+                    className="w-full px-4 py-3 border border-gray-300 rounded-sm focus:outline-none focus:ring-2 focus:ring-[#C2A878] focus:border-transparent transition-all text-gray-900"
                     style={{ fontFamily: "'Montserrat', sans-serif" }}
                   />
                 </div>
@@ -171,7 +171,7 @@ const Booking = () => {
                   name="guests"
                   value={formData.guests}
                   onChange={handleChange}
-                  className="w-full px-4 py-3 border border-gray-300 rounded-sm focus:outline-none focus:ring-2 focus:ring-[#4A7C9E] focus:border-transparent transition-all text-gray-900"
+                  className="w-full px-4 py-3 border border-gray-300 rounded-sm focus:outline-none focus:ring-2 focus:ring-[#C2A878] focus:border-transparent transition-all text-gray-900"
                   style={{ fontFamily: "'Montserrat', sans-serif" }}
                 >
                   <option value="1">1</option>
@@ -187,13 +187,13 @@ const Booking = () => {
                   onChange={handleChange}
                   placeholder={t.booking.messagePlaceholder}
                   rows="4"
-                  className="w-full px-4 py-3 border border-gray-300 rounded-sm focus:outline-none focus:ring-2 focus:ring-[#4A7C9E] focus:border-transparent transition-all resize-none text-gray-900"
+                  className="w-full px-4 py-3 border border-gray-300 rounded-sm focus:outline-none focus:ring-2 focus:ring-[#C2A878] focus:border-transparent transition-all resize-none text-gray-900"
                   style={{ fontFamily: "'Montserrat', sans-serif" }}
                 />
               </div>
               <button
                 type="submit"
-                className="w-full px-6 py-4 bg-[#4A7C9E] text-white font-light tracking-wide rounded-sm hover:bg-[#3d6682] transition-all duration-300 hover:shadow-lg flex items-center justify-center space-x-2"
+                className="w-full px-6 py-4 bg-[#C2A878] text-white font-light tracking-wide rounded-sm hover:bg-[#2E4A5B] transition-all duration-300 hover:shadow-lg flex items-center justify-center space-x-2"
                 style={{ fontFamily: "'Montserrat', sans-serif" }}
               >
                 <Send size={20} />

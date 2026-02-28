@@ -128,7 +128,7 @@ const Header = () => {
                   onClick={() => setLanguage(lang)}
                   className={`px-2 py-1 text-xs font-medium ${
                     language === lang
-                      ? 'bg-[#4A7C9E] text-white'
+                      ? 'bg-[#C2A878] text-white'
                       : isScrolled
                       ? 'text-gray-700'
                       : 'text-white'
@@ -162,7 +162,7 @@ const Header = () => {
                 <button
                   key={item.key}
                   onClick={() => scrollToSection(item.id)}
-                  className="text-left text-sm font-light tracking-wide text-gray-700 hover:text-[#4A7C9E] transition-colors py-2"
+                  className="text-left text-sm font-light tracking-wide text-gray-700 hover:text-[#C2A878] transition-colors py-2"
                   style={{ fontFamily: "'Montserrat', sans-serif" }}
                 >
                   {t.nav[item.key]}

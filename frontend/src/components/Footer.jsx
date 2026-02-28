@@ -13,7 +13,7 @@ const Footer = () => {
   };
 
   return (
-    <footer className="bg-gradient-to-b from-[#F5EFE7] to-[#E8DCC5] py-16">
+    <footer className="bg-gradient-to-b from-[#F3EFE9] to-[#D8D2C8] py-16">
       <div className="container mx-auto px-4 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
           {/* Brand */}
@@ -60,7 +60,7 @@ const Footer = () => {
                 <li key={item.key}>
                   <button
                     onClick={() => scrollToSection(item.id)}
-                    className="text-sm text-gray-600 hover:text-[#4A7C9E] transition-colors font-light"
+                    className="text-sm text-gray-600 hover:text-[#C2A878] transition-colors font-light"
                     style={{ fontFamily: "'Montserrat', sans-serif" }}
                   >
                     {t.nav[item.key]}
@@ -80,7 +80,7 @@ const Footer = () => {
             </h4>
             <ul className="space-y-3">
               <li className="flex items-start space-x-3">
-                <MapPin size={18} className="text-[#4A7C9E] mt-1 flex-shrink-0" />
+                <MapPin size={18} className="text-[#C2A878] mt-1 flex-shrink-0" />
                 <span
                   className="text-sm text-gray-600 font-light"
                   style={{ fontFamily: "'Montserrat', sans-serif" }}
@@ -89,20 +89,20 @@ const Footer = () => {
                 </span>
               </li>
               <li className="flex items-start space-x-3">
-                <Mail size={18} className="text-[#4A7C9E] mt-1 flex-shrink-0" />
+                <Mail size={18} className="text-[#C2A878] mt-1 flex-shrink-0" />
                 <a
                   href="mailto:hinodecentrovieste@gmail.com"
-                  className="text-sm text-gray-600 hover:text-[#4A7C9E] transition-colors font-light"
+                  className="text-sm text-gray-600 hover:text-[#C2A878] transition-colors font-light"
                   style={{ fontFamily: "'Montserrat', sans-serif" }}
                 >
                   hinodecentrovieste@gmail.com
                 </a>
               </li>
               <li className="flex items-start space-x-3">
-                <Phone size={18} className="text-[#4A7C9E] mt-1 flex-shrink-0" />
+                <Phone size={18} className="text-[#C2A878] mt-1 flex-shrink-0" />
                 <a
                   href="tel:+393405079259"
-                  className="text-sm text-gray-600 hover:text-[#4A7C9E] transition-colors font-light"
+                  className="text-sm text-gray-600 hover:text-[#C2A878] transition-colors font-light"
                   style={{ fontFamily: "'Montserrat', sans-serif" }}
                 >
                   +39 340 507 9259
@@ -122,7 +122,7 @@ const Footer = () => {
             <ul className="space-y-2 mb-6">
               <li>
                 <button
-                  className="text-sm text-gray-600 hover:text-[#4A7C9E] transition-colors font-light"
+                  className="text-sm text-gray-600 hover:text-[#C2A878] transition-colors font-light"
                   style={{ fontFamily: "'Montserrat', sans-serif" }}
                 >
                   {t.footer.privacy}
@@ -130,7 +130,7 @@ const Footer = () => {
               </li>
               <li>
                 <button
-                  className="text-sm text-gray-600 hover:text-[#4A7C9E] transition-colors font-light"
+                  className="text-sm text-gray-600 hover:text-[#C2A878] transition-colors font-light"
                   style={{ fontFamily: "'Montserrat', sans-serif" }}
                 >
                   {t.footer.terms}
@@ -144,7 +144,7 @@ const Footer = () => {
                 href="https://instagram.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-10 h-10 rounded-full bg-white flex items-center justify-center text-gray-600 hover:text-[#4A7C9E] hover:shadow-md transition-all"
+                className="w-10 h-10 rounded-full bg-white flex items-center justify-center text-gray-600 hover:text-[#C2A878] hover:shadow-md transition-all"
               >
                 <Instagram size={20} />
               </a>
@@ -152,7 +152,7 @@ const Footer = () => {
                 href="https://facebook.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-10 h-10 rounded-full bg-white flex items-center justify-center text-gray-600 hover:text-[#4A7C9E] hover:shadow-md transition-all"
+                className="w-10 h-10 rounded-full bg-white flex items-center justify-center text-gray-600 hover:text-[#C2A878] hover:shadow-md transition-all"
               >
                 <Facebook size={20} />
               </a>

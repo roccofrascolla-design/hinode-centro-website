@@ -25,117 +25,122 @@ const Header = () => {
 
   return (
     <header
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         isScrolled
-          ? 'bg-white/98 backdrop-blur-md shadow-sm py-6 lg:py-7'
-          : 'bg-transparent py-12 lg:py-14'
+          ? 'bg-white/90 backdrop-blur-md shadow-sm'
+          : 'bg-white/75 backdrop-blur-md'
       }`}
+      style={{
+        borderBottom: '1px solid rgba(200, 200, 200, 0.2)',
+      }}
     >
-      <div className="container mx-auto px-12 lg:px-24">
-        <div className="flex items-center justify-between">
-          {/* Logo - Transparent PNG (LEFT-ALIGNED, LARGER) */}
+      <div className="container mx-auto px-6 lg:px-12">
+        <div className="flex items-center justify-between py-5">
+          {/* Logo - LEFT ALIGNED, LARGER SIZE */}
           <button
             onClick={() => scrollToSection('hero')}
-            className="flex items-center group mr-40 lg:mr-48"
+            className="flex items-center flex-shrink-0"
           >
             <img
-              src="https://customer-assets.emergentagent.com/job_castello-balcony/artifacts/hhvsdhrq_Progetto%20senza%20titolo.png"
+              src="https://customer-assets.emergentagent.com/job_castello-balcony/artifacts/tjw8154g_Progetto%20senza%20titolo%20%281%29.png"
               alt="Hinode Centro"
-              className={`h-24 lg:h-28 w-auto transition-all duration-300 ${
-                isScrolled ? 'opacity-100' : 'opacity-100'
-              } group-hover:opacity-80`}
-              style={{ filter: isScrolled ? 'none' : 'brightness(0) invert(1)' }}
+              className="h-12 lg:h-14 w-auto"
+              style={{ 
+                filter: 'drop-shadow(0 1px 2px rgba(0,0,0,0.1))',
+              }}
             />
           </button>
 
-          {/* Desktop Navigation - ELEGANT SPACING */}
-          <nav className="hidden lg:flex items-center flex-1 justify-end">
-            {/* Navigation Links - CLEAN & SPACIOUS (NO CONTAINER) */}
-            <div className="flex items-center space-x-24">
-              {[
-                { key: 'home', id: 'hero' },
-                { key: 'apartment', id: 'apartment' },
-                { key: 'location', id: 'location' },
-                { key: 'experience', id: 'experience' },
-                { key: 'gallery', id: 'gallery' },
-              ].map((item) => (
+          {/* Desktop Navigation - SIMPLE & CLEAN */}
+          <nav className="hidden lg:flex items-center gap-8">
+            {/* Menu Links with proper spacing */}
+            <button
+              onClick={() => scrollToSection('hero')}
+              className="text-[15px] font-normal text-[#3A3A3A] hover:text-[#C2A878] transition-colors duration-300"
+              style={{ fontFamily: "'Montserrat', sans-serif" }}
+            >
+              Home
+            </button>
+            <button
+              onClick={() => scrollToSection('apartment')}
+              className="text-[15px] font-normal text-[#3A3A3A] hover:text-[#C2A878] transition-colors duration-300"
+              style={{ fontFamily: "'Montserrat', sans-serif" }}
+            >
+              Apartment
+            </button>
+            <button
+              onClick={() => scrollToSection('experience')}
+              className="text-[15px] font-normal text-[#3A3A3A] hover:text-[#C2A878] transition-colors duration-300"
+              style={{ fontFamily: "'Montserrat', sans-serif" }}
+            >
+              Experience
+            </button>
+            <button
+              onClick={() => scrollToSection('gallery')}
+              className="text-[15px] font-normal text-[#3A3A3A] hover:text-[#C2A878] transition-colors duration-300"
+              style={{ fontFamily: "'Montserrat', sans-serif" }}
+            >
+              Gallery
+            </button>
+            <button
+              onClick={() => scrollToSection('booking')}
+              className="text-[15px] font-normal text-[#3A3A3A] hover:text-[#C2A878] transition-colors duration-300"
+              style={{ fontFamily: "'Montserrat', sans-serif" }}
+            >
+              Contact
+            </button>
+          </nav>
+
+          {/* Right Section: Book Now + Language */}
+          <div className="hidden lg:flex items-center gap-6">
+            {/* Book Now Button */}
+            <button
+              onClick={() => scrollToSection('booking')}
+              className="px-6 py-2.5 bg-[#C2A878] text-white text-[15px] font-normal rounded-sm hover:bg-[#2E4A5B] transition-all duration-300"
+              style={{ fontFamily: "'Montserrat', sans-serif" }}
+            >
+              {t.nav.booking}
+            </button>
+
+            {/* Language Selector */}
+            <div className="flex items-center gap-1 border border-[#D8D2C8] rounded-sm overflow-hidden">
+              {['IT', 'EN', 'FR', 'DE'].map((lang) => (
                 <button
-                  key={item.key}
-                  onClick={() => scrollToSection(item.id)}
-                  className={`text-base font-light tracking-[0.15em] transition-all duration-300 relative group ${
-                    isScrolled ? 'text-[#3A3A3A] hover:text-[#C2A878]' : 'text-white hover:text-[#C2A878]'
+                  key={lang}
+                  onClick={() => setLanguage(lang.toLowerCase())}
+                  className={`px-3 py-2 text-xs font-medium transition-colors duration-300 ${
+                    language === lang.toLowerCase()
+                      ? 'bg-[#C2A878] text-white'
+                      : 'text-[#3A3A3A] hover:bg-[#F3EFE9]'
                   }`}
                   style={{ fontFamily: "'Montserrat', sans-serif" }}
                 >
-                  {t.nav[item.key]}
-                  <span className={`absolute -bottom-1 left-0 w-0 h-[2px] transition-all duration-300 group-hover:w-full ${
-                    isScrolled ? 'bg-[#C2A878]' : 'bg-white'
-                  }`}></span>
+                  {lang}
                 </button>
               ))}
             </div>
-            
-            {/* Right Section: CTA + Language - ELEGANT SPACING */}
-            <div className="flex items-center ml-24">
-              {/* CTA Button - REFINED */}
-              <button
-                onClick={() => scrollToSection('booking')}
-                className="px-12 py-4 bg-[#C2A878] text-white text-base font-light tracking-[0.15em] rounded-sm hover:bg-[#2E4A5B] transition-all duration-500 hover:shadow-xl hover:scale-105 mr-12"
-                style={{ fontFamily: "'Montserrat', sans-serif" }}
-              >
-                {t.nav.booking}
-              </button>
-
-              {/* Language Toggle - REFINED */}
-              <div className={`flex items-center space-x-1 border rounded-sm overflow-hidden transition-all duration-300 ${
-                isScrolled ? 'border-[#D8D2C8]' : 'border-white/30'
-              }`}>
-                {['it', 'en', 'fr', 'de'].map((lang) => (
-                  <button
-                    key={lang}
-                    onClick={() => setLanguage(lang)}
-                    className={`px-5 py-3 text-sm font-medium tracking-[0.15em] transition-all duration-300 ${
-                      language === lang
-                        ? 'bg-[#C2A878] text-white'
-                        : isScrolled
-                        ? 'text-[#3A3A3A] hover:bg-[#F3EFE9]/50'
-                        : 'text-white hover:bg-white/10'
-                    }`}
-                    style={{ fontFamily: "'Montserrat', sans-serif" }}
-                  >
-                    {lang.toUpperCase()}
-                  </button>
-                ))}
-              </div>
-            </div>
-          </nav>
+          </div>
 
           {/* Mobile Menu Button */}
-          <div className="lg:hidden flex items-center space-x-4">
-            <div className="flex items-center space-x-1 border rounded-sm overflow-hidden"
-              style={{
-                borderColor: isScrolled ? '#d1d5db' : 'rgba(255,255,255,0.5)'
-              }}
-            >
-              {['it', 'en', 'fr', 'de'].map((lang) => (
+          <div className="lg:hidden flex items-center gap-3">
+            <div className="flex items-center gap-1 border border-[#D8D2C8] rounded-sm overflow-hidden">
+              {['IT', 'EN', 'FR', 'DE'].map((lang) => (
                 <button
                   key={lang}
-                  onClick={() => setLanguage(lang)}
+                  onClick={() => setLanguage(lang.toLowerCase())}
                   className={`px-2 py-1 text-xs font-medium ${
-                    language === lang
+                    language === lang.toLowerCase()
                       ? 'bg-[#C2A878] text-white'
-                      : isScrolled
-                      ? 'text-gray-700'
-                      : 'text-white'
+                      : 'text-[#3A3A3A]'
                   }`}
                 >
-                  {lang.toUpperCase()}
+                  {lang}
                 </button>
               ))}
             </div>
             <button
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-              className={`p-2 ${isScrolled ? 'text-gray-700' : 'text-white'}`}
+              className="p-2 text-[#3A3A3A]"
             >
               {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
             </button>
@@ -144,25 +149,50 @@ const Header = () => {
 
         {/* Mobile Menu */}
         {isMobileMenuOpen && (
-          <nav className="lg:hidden mt-6 py-6 border-t border-gray-200">
-            <div className="flex flex-col space-y-4">
-              {[
-                { key: 'home', id: 'hero' },
-                { key: 'apartment', id: 'apartment' },
-                { key: 'location', id: 'location' },
-                { key: 'experience', id: 'experience' },
-                { key: 'gallery', id: 'gallery' },
-                { key: 'booking', id: 'booking' },
-              ].map((item) => (
-                <button
-                  key={item.key}
-                  onClick={() => scrollToSection(item.id)}
-                  className="text-left text-sm font-light tracking-wide text-gray-700 hover:text-[#C2A878] transition-colors py-2"
-                  style={{ fontFamily: "'Montserrat', sans-serif" }}
-                >
-                  {t.nav[item.key]}
-                </button>
-              ))}
+          <nav className="lg:hidden py-4 border-t border-[#D8D2C8]">
+            <div className="flex flex-col gap-3">
+              <button
+                onClick={() => scrollToSection('hero')}
+                className="text-left text-[15px] font-normal text-[#3A3A3A] hover:text-[#C2A878] py-2"
+                style={{ fontFamily: "'Montserrat', sans-serif" }}
+              >
+                Home
+              </button>
+              <button
+                onClick={() => scrollToSection('apartment')}
+                className="text-left text-[15px] font-normal text-[#3A3A3A] hover:text-[#C2A878] py-2"
+                style={{ fontFamily: "'Montserrat', sans-serif" }}
+              >
+                Apartment
+              </button>
+              <button
+                onClick={() => scrollToSection('experience')}
+                className="text-left text-[15px] font-normal text-[#3A3A3A] hover:text-[#C2A878] py-2"
+                style={{ fontFamily: "'Montserrat', sans-serif" }}
+              >
+                Experience
+              </button>
+              <button
+                onClick={() => scrollToSection('gallery')}
+                className="text-left text-[15px] font-normal text-[#3A3A3A] hover:text-[#C2A878] py-2"
+                style={{ fontFamily: "'Montserrat', sans-serif" }}
+              >
+                Gallery
+              </button>
+              <button
+                onClick={() => scrollToSection('booking')}
+                className="text-left text-[15px] font-normal text-[#3A3A3A] hover:text-[#C2A878] py-2"
+                style={{ fontFamily: "'Montserrat', sans-serif" }}
+              >
+                Contact
+              </button>
+              <button
+                onClick={() => scrollToSection('booking')}
+                className="mt-2 px-6 py-2.5 bg-[#C2A878] text-white text-[15px] font-normal rounded-sm"
+                style={{ fontFamily: "'Montserrat', sans-serif" }}
+              >
+                {t.nav.booking}
+              </button>
             </div>
           </nav>
         )}

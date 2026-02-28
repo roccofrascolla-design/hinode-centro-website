@@ -11,11 +11,22 @@ body {
         sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    background-color: #F3EFE9;
+    color: #3A3A3A;
 }
 
 code {
     font-family:
         source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+}
+
+/* Brand Color Variables */
+:root {
+  --primary-bg: #F3EFE9;
+  --accent-gold: #C2A878;
+  --primary-text: #3A3A3A;
+  --soft-neutral: #D8D2C8;
+  --hover-accent: #2E4A5B;
 }
 
 /* Smooth scrolling */

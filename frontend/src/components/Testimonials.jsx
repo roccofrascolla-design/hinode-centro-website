@@ -1,6 +1,6 @@
 import React from 'react';
 import { useLanguage } from '../context/LanguageContext';
-import { Quote } from 'lucide-react';
+import { Star } from 'lucide-react';
 
 const Testimonials = () => {
   const { t } = useLanguage();
@@ -18,53 +18,69 @@ const Testimonials = () => {
           </h2>
         </div>
 
-        {/* Testimonial Card */}
-        <div className="max-w-4xl mx-auto">
-          <div className="bg-white rounded-lg shadow-md p-8 lg:p-12 relative">
-            {/* Quote Icon */}
-            <div className="absolute top-6 left-6 opacity-10">
-              <Quote size={64} className="text-[#C2A878]" />
-            </div>
+        {/* Reviews Grid - 2 columns */}
+        <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8">
+          {t.testimonials.reviews.map((review, index) => (
+            <div
+              key={index}
+              className="bg-white rounded-lg shadow-md p-8 hover:shadow-lg transition-shadow duration-300"
+            >
+              {/* Stars */}
+              <div className="flex items-center gap-1 mb-4">
+                {[...Array(review.stars)].map((_, i) => (
+                  <Star
+                    key={i}
+                    size={18}
+                    className="fill-[#C2A878] text-[#C2A878]"
+                  />
+                ))}
+              </div>
 
-            {/* Testimonial Content */}
-            <div className="relative">
+              {/* Quote */}
               <p
-                className="text-xl md:text-2xl text-gray-800 font-light leading-relaxed mb-6 italic"
-                style={{ fontFamily: "'Cormorant Garamond', serif" }}
+                className="text-base md:text-lg text-gray-700 font-light leading-relaxed mb-6"
+                style={{ fontFamily: "'Montserrat', sans-serif" }}
               >
-                "{t.testimonials.quote}"
+                "{review.quote}"
               </p>
-              
+
               {/* Author */}
-              <div className="flex items-center space-x-4">
-                <div className="w-12 h-12 rounded-full bg-[#C2A878] flex items-center justify-center">
+              <div className="flex items-center space-x-3 pt-4 border-t border-[#D8D2C8]">
+                <div className="w-10 h-10 rounded-full bg-[#C2A878] flex items-center justify-center flex-shrink-0">
                   <span
-                    className="text-white text-xl font-light"
+                    className="text-white text-lg font-light"
                     style={{ fontFamily: "'Cormorant Garamond', serif" }}
                   >
-                    E
+                    {review.author.charAt(0)}
                   </span>
                 </div>
                 <div>
                   <p
-                    className="text-lg font-light text-gray-900"
+                    className="text-base font-light text-gray-900"
                     style={{ fontFamily: "'Montserrat', sans-serif" }}
                   >
-                    {t.testimonials.author}
+                    {review.author}
                   </p>
                   <p
                     className="text-sm font-light text-gray-600"
                     style={{ fontFamily: "'Montserrat', sans-serif" }}
                   >
-                    {t.testimonials.source}
+                    {review.country}
                   </p>
                 </div>
               </div>
             </div>
+          ))}
+        </div>
 
-            {/* Decorative element */}
-            <div className="absolute bottom-0 right-0 w-32 h-32 bg-gradient-to-tl from-[#D8D2C8]/20 to-transparent rounded-tl-full" />
-          </div>
+        {/* Booking.com Badge */}
+        <div className="text-center mt-12">
+          <p
+            className="text-sm text-gray-600 font-light"
+            style={{ fontFamily: "'Montserrat', sans-serif" }}
+          >
+            Verified reviews from Booking.com
+          </p>
         </div>
       </div>
     </section>

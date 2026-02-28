@@ -14,12 +14,12 @@ const Apartment = () => {
     {
       title: t.apartment.bedroomTitle,
       text: t.apartment.bedroomText,
-      image: 'https://customer-assets.emergentagent.com/job_castello-balcony/artifacts/1f2ipoxl_DSC_3551.jpeg',
+      image: 'https://customer-assets.emergentagent.com/job_castello-balcony/artifacts/zi597i9f_DSC_3555.jpeg',
     },
     {
       title: t.apartment.bathroomTitle,
       text: t.apartment.bathroomText,
-      image: 'https://customer-assets.emergentagent.com/job_castello-balcony/artifacts/h6uohd0o_DSC_3567.jpeg',
+      image: 'https://customer-assets.emergentagent.com/job_castello-balcony/artifacts/lcqfkd0g_DSC_3580.jpeg',
     },
   ];
 

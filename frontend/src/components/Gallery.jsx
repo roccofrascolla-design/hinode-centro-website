@@ -19,11 +19,11 @@ const Gallery = () => {
       alt: 'Living area with fully equipped kitchenette',
     },
     {
-      url: 'https://customer-assets.emergentagent.com/job_castello-balcony/artifacts/1f2ipoxl_DSC_3551.jpeg',
-      alt: 'Bedroom with sea blue accents',
+      url: 'https://customer-assets.emergentagent.com/job_castello-balcony/artifacts/zi597i9f_DSC_3555.jpeg',
+      alt: 'Elegant bedroom with blue accents',
     },
     {
-      url: 'https://customer-assets.emergentagent.com/job_castello-balcony/artifacts/h6uohd0o_DSC_3567.jpeg',
+      url: 'https://customer-assets.emergentagent.com/job_castello-balcony/artifacts/lcqfkd0g_DSC_3580.jpeg',
       alt: 'Modern bathroom with elegant finishes',
     },
     {

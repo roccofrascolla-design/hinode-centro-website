@@ -51,12 +51,20 @@ const Gallery = () => {
       alt: 'Rooftop terrace with sea view',
     },
     {
+      url: 'https://customer-assets.emergentagent.com/job_castello-balcony/artifacts/l2m63112_DSC_1395.jpeg',
+      alt: 'Private terrace with seating and historic center views',
+    },
+    {
       url: 'https://customer-assets.emergentagent.com/job_castello-balcony/artifacts/pi04vzph_DSC_3545.jpeg',
       alt: 'Bright living space with dining area',
     },
     {
       url: 'https://customer-assets.emergentagent.com/job_castello-balcony/artifacts/k5sztf5m_DSC_3630.jpeg',
       alt: 'Historic center of Vieste with lighthouse',
+    },
+    {
+      url: 'https://customer-assets.emergentagent.com/job_castello-balcony/artifacts/zjft6gai_450922855.jpg',
+      alt: 'Spectacular coastal view of Vieste on the cliffs',
     },
     {
       url: 'https://customer-assets.emergentagent.com/job_castello-balcony/artifacts/283xch86_DSC_3635.jpeg',

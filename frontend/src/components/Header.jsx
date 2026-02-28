@@ -33,27 +33,18 @@ const Header = () => {
     >
       <div className="container mx-auto px-8 lg:px-16">
         <div className="flex items-center justify-between">
-          {/* Logo */}
+          {/* Logo - Image */}
           <button
             onClick={() => scrollToSection('hero')}
-            className="flex flex-col items-start group mr-16"
+            className="flex items-center group mr-16"
           >
-            <span
-              className={`text-3xl lg:text-4xl font-light tracking-[0.18em] transition-colors duration-300 ${
-                isScrolled ? 'text-gray-900' : 'text-white'
-              } group-hover:text-[#4A7C9E]`}
-              style={{ fontFamily: "'Cormorant Garamond', serif" }}
-            >
-              HINODE
-            </span>
-            <span
-              className={`text-xs tracking-[0.28em] transition-colors duration-300 mt-0.5 ${
-                isScrolled ? 'text-gray-600' : 'text-white/90'
-              }`}
-              style={{ fontFamily: "'Montserrat', sans-serif" }}
-            >
-              CENTRO
-            </span>
+            <img
+              src="https://customer-assets.emergentagent.com/job_castello-balcony/artifacts/98qi2bg7_logo%20hinode.jpg"
+              alt="Hinode Centro"
+              className={`h-12 lg:h-14 w-auto transition-opacity duration-300 ${
+                isScrolled ? 'opacity-100' : 'opacity-100'
+              } group-hover:opacity-80`}
+            />
           </button>
 
           {/* Desktop Navigation */}
@@ -61,7 +52,7 @@ const Header = () => {
             {/* Navigation Links - with filled background container */}
             <div className={`flex items-center space-x-10 px-8 py-3 rounded-sm backdrop-blur-md border transition-all duration-300 mr-12 ${
               isScrolled
-                ? 'bg-gray-50/80 border-gray-200'
+                ? 'bg-white/90 border-[#D8D2C8]'
                 : 'bg-white/10 border-white/20'
             }`}>
               {[
@@ -75,13 +66,13 @@ const Header = () => {
                   key={item.key}
                   onClick={() => scrollToSection(item.id)}
                   className={`text-sm font-light tracking-[0.1em] transition-all duration-300 relative group ${
-                    isScrolled ? 'text-gray-700 hover:text-[#4A7C9E]' : 'text-white hover:text-white'
+                    isScrolled ? 'text-[#3A3A3A] hover:text-[#C2A878]' : 'text-white hover:text-white'
                   }`}
                   style={{ fontFamily: "'Montserrat', sans-serif" }}
                 >
                   {t.nav[item.key]}
                   <span className={`absolute bottom-0 left-0 w-0 h-[1px] transition-all duration-300 group-hover:w-full ${
-                    isScrolled ? 'bg-[#4A7C9E]' : 'bg-white'
+                    isScrolled ? 'bg-[#C2A878]' : 'bg-white'
                   }`}></span>
                 </button>
               ))}
@@ -92,7 +83,7 @@ const Header = () => {
               {/* CTA Button */}
               <button
                 onClick={() => scrollToSection('booking')}
-                className="px-8 py-3 bg-[#4A7C9E] text-white text-sm font-light tracking-[0.1em] rounded-sm hover:bg-[#3d6682] transition-all duration-300 hover:shadow-lg hover:scale-105 mr-8"
+                className="px-8 py-3 bg-[#C2A878] text-white text-sm font-light tracking-[0.1em] rounded-sm hover:bg-[#2E4A5B] transition-all duration-300 hover:shadow-lg hover:scale-105 mr-8"
                 style={{ fontFamily: "'Montserrat', sans-serif" }}
               >
                 {t.nav.booking}
@@ -101,7 +92,7 @@ const Header = () => {
               {/* Language Toggle - 4 languages */}
               <div className="flex items-center space-x-1 border rounded-sm overflow-hidden"
                 style={{
-                  borderColor: isScrolled ? '#d1d5db' : 'rgba(255,255,255,0.5)'
+                  borderColor: isScrolled ? '#D8D2C8' : 'rgba(255,255,255,0.5)'
                 }}
               >
                 {['it', 'en', 'fr', 'de'].map((lang, index) => (
@@ -110,9 +101,9 @@ const Header = () => {
                     onClick={() => setLanguage(lang)}
                     className={`px-3 py-2 text-xs font-medium tracking-[0.12em] transition-all duration-300 ${
                       language === lang
-                        ? 'bg-[#4A7C9E] text-white'
+                        ? 'bg-[#C2A878] text-white'
                         : isScrolled
-                        ? 'text-gray-700 hover:bg-gray-50'
+                        ? 'text-[#3A3A3A] hover:bg-[#F3EFE9]'
                         : 'text-white hover:bg-white/10'
                     }`}
                     style={{ fontFamily: "'Montserrat', sans-serif" }}

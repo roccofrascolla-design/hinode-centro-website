@@ -33,28 +33,25 @@ const Header = () => {
     >
       <div className="container mx-auto px-12 lg:px-24">
         <div className="flex items-center justify-between">
-          {/* Logo - Image (LARGER SIZE) */}
+          {/* Logo - Transparent PNG (LEFT-ALIGNED, LARGER) */}
           <button
             onClick={() => scrollToSection('hero')}
-            className="flex items-center group mr-32 lg:mr-40"
+            className="flex items-center group mr-40 lg:mr-48"
           >
             <img
-              src="https://customer-assets.emergentagent.com/job_castello-balcony/artifacts/98qi2bg7_logo%20hinode.jpg"
+              src="https://customer-assets.emergentagent.com/job_castello-balcony/artifacts/hhvsdhrq_Progetto%20senza%20titolo.png"
               alt="Hinode Centro"
-              className={`h-20 lg:h-24 w-auto transition-opacity duration-300 ${
+              className={`h-24 lg:h-28 w-auto transition-all duration-300 ${
                 isScrolled ? 'opacity-100' : 'opacity-100'
               } group-hover:opacity-80`}
+              style={{ filter: isScrolled ? 'none' : 'brightness(0) invert(1)' }}
             />
           </button>
 
-          {/* Desktop Navigation */}
+          {/* Desktop Navigation - ELEGANT SPACING */}
           <nav className="hidden lg:flex items-center flex-1 justify-end">
-            {/* Navigation Links - with filled background container (LARGER SPACING) */}
-            <div className={`flex items-center space-x-20 px-10 py-4 rounded-sm backdrop-blur-md border transition-all duration-300 mr-16 ${
-              isScrolled
-                ? 'bg-white/90 border-[#D8D2C8]'
-                : 'bg-white/10 border-white/20'
-            }`}>
+            {/* Navigation Links - CLEAN & SPACIOUS (NO CONTAINER) */}
+            <div className="flex items-center space-x-24">
               {[
                 { key: 'home', id: 'hero' },
                 { key: 'apartment', id: 'apartment' },
@@ -65,45 +62,43 @@ const Header = () => {
                 <button
                   key={item.key}
                   onClick={() => scrollToSection(item.id)}
-                  className={`text-base font-light tracking-[0.12em] transition-all duration-300 relative group ${
-                    isScrolled ? 'text-[#3A3A3A] hover:text-[#C2A878]' : 'text-white hover:text-white'
+                  className={`text-base font-light tracking-[0.15em] transition-all duration-300 relative group ${
+                    isScrolled ? 'text-[#3A3A3A] hover:text-[#C2A878]' : 'text-white hover:text-[#C2A878]'
                   }`}
                   style={{ fontFamily: "'Montserrat', sans-serif" }}
                 >
                   {t.nav[item.key]}
-                  <span className={`absolute bottom-0 left-0 w-0 h-[1px] transition-all duration-300 group-hover:w-full ${
+                  <span className={`absolute -bottom-1 left-0 w-0 h-[2px] transition-all duration-300 group-hover:w-full ${
                     isScrolled ? 'bg-[#C2A878]' : 'bg-white'
                   }`}></span>
                 </button>
               ))}
             </div>
             
-            {/* Right Section: CTA + Language - with extra spacing */}
-            <div className="flex items-center ml-20">
-              {/* CTA Button (LARGER) */}
+            {/* Right Section: CTA + Language - ELEGANT SPACING */}
+            <div className="flex items-center ml-24">
+              {/* CTA Button - REFINED */}
               <button
                 onClick={() => scrollToSection('booking')}
-                className="px-10 py-4 bg-[#C2A878] text-white text-base font-light tracking-[0.12em] rounded-sm hover:bg-[#2E4A5B] transition-all duration-300 hover:shadow-lg hover:scale-105 mr-10"
+                className="px-12 py-4 bg-[#C2A878] text-white text-base font-light tracking-[0.15em] rounded-sm hover:bg-[#2E4A5B] transition-all duration-500 hover:shadow-xl hover:scale-105 mr-12"
                 style={{ fontFamily: "'Montserrat', sans-serif" }}
               >
                 {t.nav.booking}
               </button>
 
-              {/* Language Toggle - 4 languages (LARGER) */}
-              <div className="flex items-center space-x-1 border rounded-sm overflow-hidden"
-                style={{
-                  borderColor: isScrolled ? '#D8D2C8' : 'rgba(255,255,255,0.5)'
-                }}
-              >
-                {['it', 'en', 'fr', 'de'].map((lang, index) => (
+              {/* Language Toggle - REFINED */}
+              <div className={`flex items-center space-x-1 border rounded-sm overflow-hidden transition-all duration-300 ${
+                isScrolled ? 'border-[#D8D2C8]' : 'border-white/30'
+              }`}>
+                {['it', 'en', 'fr', 'de'].map((lang) => (
                   <button
                     key={lang}
                     onClick={() => setLanguage(lang)}
-                    className={`px-4 py-3 text-sm font-medium tracking-[0.14em] transition-all duration-300 ${
+                    className={`px-5 py-3 text-sm font-medium tracking-[0.15em] transition-all duration-300 ${
                       language === lang
                         ? 'bg-[#C2A878] text-white'
                         : isScrolled
-                        ? 'text-[#3A3A3A] hover:bg-[#F3EFE9]'
+                        ? 'text-[#3A3A3A] hover:bg-[#F3EFE9]/50'
                         : 'text-white hover:bg-white/10'
                     }`}
                     style={{ fontFamily: "'Montserrat', sans-serif" }}

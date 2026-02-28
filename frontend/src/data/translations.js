@@ -797,3 +797,124 @@ translations.de.testimonials = {
   author: 'Elisa',
   source: 'Booking.com',
 };
+
+// Update testimonials with multiple reviews
+translations.it.testimonials = {
+  title: 'Cosa Dicono i Nostri Ospiti',
+  reviews: [
+    {
+      stars: 5,
+      quote: 'Appartamento in pieno centro a Vieste, arredato con cura, spazioso e pulito. Rocco il proprietario gentilissimo e sempre disponibile.',
+      author: 'Elisa',
+      country: 'Italia',
+    },
+    {
+      stars: 5,
+      quote: 'Posizione ottima sia per il centro storico che per il mare. Ampio parcheggio nelle vicinanze. L\'host Rocco ci ha dato preziosi suggerimenti ed è stato sempre disponibile in ogni occasione.',
+      author: 'Nicola',
+      country: 'Italia',
+    },
+    {
+      stars: 5,
+      quote: 'Perfect location overlooking one of the main squares. The apartment was very spacious, modern, and well taken care of. Rocco was very welcoming and provided great local information. Highly recommend!',
+      author: 'Paul',
+      country: 'Canada',
+    },
+    {
+      stars: 5,
+      quote: 'Definition of hospitality. When we had a medical issue, Rocco helped us immediately. Location 10/10 within walking distance to beaches and restaurants. Spacious apartment and very comfortable stay.',
+      author: 'Gregory',
+      country: 'USA',
+    },
+  ],
+};
+
+translations.en.testimonials = {
+  title: 'What Guests Say About Us',
+  reviews: [
+    {
+      stars: 5,
+      quote: 'Apartment in the heart of Vieste, tastefully furnished, spacious and very clean. Rocco, the owner, is extremely kind and always available.',
+      author: 'Elisa',
+      country: 'Italy',
+    },
+    {
+      stars: 5,
+      quote: 'Posizione ottima sia per il centro storico che per il mare. Ampio parcheggio nelle vicinanze. L\'host Rocco ci ha dato preziosi suggerimenti ed è stato sempre disponibile in ogni occasione.',
+      author: 'Nicola',
+      country: 'Italy',
+    },
+    {
+      stars: 5,
+      quote: 'Perfect location overlooking one of the main squares. The apartment was very spacious, modern, and well taken care of. Rocco was very welcoming and provided great local information. Highly recommend!',
+      author: 'Paul',
+      country: 'Canada',
+    },
+    {
+      stars: 5,
+      quote: 'Definition of hospitality. When we had a medical issue, Rocco helped us immediately. Location 10/10 within walking distance to beaches and restaurants. Spacious apartment and very comfortable stay.',
+      author: 'Gregory',
+      country: 'USA',
+    },
+  ],
+};
+
+translations.fr.testimonials = {
+  title: 'Ce Que Disent Nos Clients',
+  reviews: [
+    {
+      stars: 5,
+      quote: 'Appartement en plein centre de Vieste, meublé avec goût, spacieux et très propre. Rocco, le propriétaire, est extrêmement gentil et toujours disponible.',
+      author: 'Elisa',
+      country: 'Italie',
+    },
+    {
+      stars: 5,
+      quote: 'Position idéale pour le centre historique et la mer. Grand parking à proximité. L\'hôte Rocco nous a donné de précieux conseils et a toujours été disponible.',
+      author: 'Nicola',
+      country: 'Italie',
+    },
+    {
+      stars: 5,
+      quote: 'Emplacement parfait avec vue sur l\'une des places principales. L\'appartement était très spacieux, moderne et bien entretenu. Rocco était très accueillant. Je recommande vivement !',
+      author: 'Paul',
+      country: 'Canada',
+    },
+    {
+      stars: 5,
+      quote: 'Définition de l\'hospitalité. Lorsque nous avons eu un problème médical, Rocco nous a aidés immédiatement. Emplacement 10/10, appartement spacieux et séjour très confortable.',
+      author: 'Gregory',
+      country: 'USA',
+    },
+  ],
+};
+
+translations.de.testimonials = {
+  title: 'Was Unsere Gäste Sagen',
+  reviews: [
+    {
+      stars: 5,
+      quote: 'Wohnung im Herzen von Vieste, geschmackvoll eingerichtet, geräumig und sehr sauber. Rocco, der Eigentümer, ist äußerst freundlich und immer verfügbar.',
+      author: 'Elisa',
+      country: 'Italien',
+    },
+    {
+      stars: 5,
+      quote: 'Optimale Lage sowohl für die Altstadt als auch für das Meer. Großer Parkplatz in der Nähe. Gastgeber Rocco gab uns wertvolle Tipps und war immer verfügbar.',
+      author: 'Nicola',
+      country: 'Italien',
+    },
+    {
+      stars: 5,
+      quote: 'Perfekte Lage mit Blick auf einen der Hauptplätze. Die Wohnung war sehr geräumig, modern und gut gepflegt. Rocco war sehr gastfreundlich. Sehr zu empfehlen!',
+      author: 'Paul',
+      country: 'Kanada',
+    },
+    {
+      stars: 5,
+      quote: 'Lage kann nicht besser sein, alles fußläufig erreichbar. Hoher Standard der Einrichtung und professioneller Gastgeber. Perfekte Organisation und sehr freundlicher Empfang.',
+      author: 'Andreas',
+      country: 'Deutschland',
+    },
+  ],
+};

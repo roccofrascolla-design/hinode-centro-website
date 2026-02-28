@@ -36,15 +36,15 @@ const Header = () => {
     >
       <div className="container mx-auto px-6 lg:px-12">
         <div className="flex items-center justify-between py-5">
-          {/* Logo - LEFT ALIGNED, LARGER SIZE (60-70px) */}
+          {/* Logo - NEW VERSION (65px desktop, 40px mobile) */}
           <button
             onClick={() => scrollToSection('hero')}
-            className="flex items-center flex-shrink-0 pl-0 lg:pl-6"
+            className="flex items-center flex-shrink-0 pl-6 lg:pl-7"
           >
             <img
-              src="https://customer-assets.emergentagent.com/job_castello-balcony/artifacts/tjw8154g_Progetto%20senza%20titolo%20%281%29.png"
+              src="https://customer-assets.emergentagent.com/job_castello-balcony/artifacts/aupcv5j4_Progetto%20senza%20titolo.png"
               alt="Hinode Centro"
-              className="h-10 lg:h-16 w-auto"
+              className="h-10 lg:h-[65px] w-auto"
               style={{ 
                 filter: 'drop-shadow(0 1px 2px rgba(0,0,0,0.1))',
                 objectFit: 'contain',

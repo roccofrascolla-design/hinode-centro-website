@@ -27,21 +27,21 @@ const Header = () => {
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
         isScrolled
-          ? 'bg-white/98 backdrop-blur-md shadow-sm py-5'
-          : 'bg-transparent py-8 lg:py-9'
+          ? 'bg-white/98 backdrop-blur-md shadow-sm py-6 lg:py-7'
+          : 'bg-transparent py-12 lg:py-14'
       }`}
     >
-      <div className="container mx-auto px-8 lg:px-16">
+      <div className="container mx-auto px-12 lg:px-24">
         <div className="flex items-center justify-between">
-          {/* Logo - Image */}
+          {/* Logo - Image (LARGER SIZE) */}
           <button
             onClick={() => scrollToSection('hero')}
-            className="flex items-center group mr-16"
+            className="flex items-center group mr-32 lg:mr-40"
           >
             <img
               src="https://customer-assets.emergentagent.com/job_castello-balcony/artifacts/98qi2bg7_logo%20hinode.jpg"
               alt="Hinode Centro"
-              className={`h-12 lg:h-14 w-auto transition-opacity duration-300 ${
+              className={`h-20 lg:h-24 w-auto transition-opacity duration-300 ${
                 isScrolled ? 'opacity-100' : 'opacity-100'
               } group-hover:opacity-80`}
             />
@@ -49,8 +49,8 @@ const Header = () => {
 
           {/* Desktop Navigation */}
           <nav className="hidden lg:flex items-center flex-1 justify-end">
-            {/* Navigation Links - with filled background container */}
-            <div className={`flex items-center space-x-10 px-8 py-3 rounded-sm backdrop-blur-md border transition-all duration-300 mr-12 ${
+            {/* Navigation Links - with filled background container (LARGER SPACING) */}
+            <div className={`flex items-center space-x-20 px-10 py-4 rounded-sm backdrop-blur-md border transition-all duration-300 mr-16 ${
               isScrolled
                 ? 'bg-white/90 border-[#D8D2C8]'
                 : 'bg-white/10 border-white/20'
@@ -65,7 +65,7 @@ const Header = () => {
                 <button
                   key={item.key}
                   onClick={() => scrollToSection(item.id)}
-                  className={`text-sm font-light tracking-[0.1em] transition-all duration-300 relative group ${
+                  className={`text-base font-light tracking-[0.12em] transition-all duration-300 relative group ${
                     isScrolled ? 'text-[#3A3A3A] hover:text-[#C2A878]' : 'text-white hover:text-white'
                   }`}
                   style={{ fontFamily: "'Montserrat', sans-serif" }}
@@ -79,17 +79,17 @@ const Header = () => {
             </div>
             
             {/* Right Section: CTA + Language - with extra spacing */}
-            <div className="flex items-center ml-16">
-              {/* CTA Button */}
+            <div className="flex items-center ml-20">
+              {/* CTA Button (LARGER) */}
               <button
                 onClick={() => scrollToSection('booking')}
-                className="px-8 py-3 bg-[#C2A878] text-white text-sm font-light tracking-[0.1em] rounded-sm hover:bg-[#2E4A5B] transition-all duration-300 hover:shadow-lg hover:scale-105 mr-8"
+                className="px-10 py-4 bg-[#C2A878] text-white text-base font-light tracking-[0.12em] rounded-sm hover:bg-[#2E4A5B] transition-all duration-300 hover:shadow-lg hover:scale-105 mr-10"
                 style={{ fontFamily: "'Montserrat', sans-serif" }}
               >
                 {t.nav.booking}
               </button>
 
-              {/* Language Toggle - 4 languages */}
+              {/* Language Toggle - 4 languages (LARGER) */}
               <div className="flex items-center space-x-1 border rounded-sm overflow-hidden"
                 style={{
                   borderColor: isScrolled ? '#D8D2C8' : 'rgba(255,255,255,0.5)'
@@ -99,7 +99,7 @@ const Header = () => {
                   <button
                     key={lang}
                     onClick={() => setLanguage(lang)}
-                    className={`px-3 py-2 text-xs font-medium tracking-[0.12em] transition-all duration-300 ${
+                    className={`px-4 py-3 text-sm font-medium tracking-[0.14em] transition-all duration-300 ${
                       language === lang
                         ? 'bg-[#C2A878] text-white'
                         : isScrolled

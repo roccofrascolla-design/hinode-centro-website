@@ -19,20 +19,40 @@ const Gallery = () => {
       alt: 'Living area with fully equipped kitchenette',
     },
     {
+      url: 'https://customer-assets.emergentagent.com/job_castello-balcony/artifacts/xm0tns05_DSC_3617.jpeg',
+      alt: 'Stunning terrace view overlooking the sea',
+    },
+    {
       url: 'https://customer-assets.emergentagent.com/job_castello-balcony/artifacts/zi597i9f_DSC_3555.jpeg',
       alt: 'Elegant bedroom with blue accents',
+    },
+    {
+      url: 'https://customer-assets.emergentagent.com/job_castello-balcony/artifacts/1f2ipoxl_DSC_3551.jpeg',
+      alt: 'Cozy bedroom detail with refined decor',
     },
     {
       url: 'https://customer-assets.emergentagent.com/job_castello-balcony/artifacts/lcqfkd0g_DSC_3580.jpeg',
       alt: 'Modern bathroom with elegant finishes',
     },
     {
+      url: 'https://customer-assets.emergentagent.com/job_castello-balcony/artifacts/h6uohd0o_DSC_3567.jpeg',
+      alt: 'Spacious bedroom with natural light',
+    },
+    {
       url: 'https://customer-assets.emergentagent.com/job_castello-balcony/artifacts/uz270r2i_DSC_3603.jpeg',
       alt: 'Elegant sitting area',
     },
     {
+      url: 'https://customer-assets.emergentagent.com/job_castello-balcony/artifacts/1d2r04jp_DSC_3584.jpeg',
+      alt: 'Luxurious bathroom with modern amenities',
+    },
+    {
       url: 'https://customer-assets.emergentagent.com/job_castello-balcony/artifacts/8tqcd618_DSC_1389.jpeg',
       alt: 'Rooftop terrace with sea view',
+    },
+    {
+      url: 'https://customer-assets.emergentagent.com/job_castello-balcony/artifacts/pi04vzph_DSC_3545.jpeg',
+      alt: 'Bright living space with dining area',
     },
     {
       url: 'https://customer-assets.emergentagent.com/job_castello-balcony/artifacts/k5sztf5m_DSC_3630.jpeg',

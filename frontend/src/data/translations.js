@@ -1146,3 +1146,34 @@ translations.de.testimonials = {
     },
   ],
 };
+
+
+translations.es.testimonials = {
+  title: 'Lo Que Dicen Nuestros Huéspedes',
+  reviews: [
+    {
+      stars: 5,
+      quote: 'Apartamento en pleno centro de Vieste, amueblado con cuidado, espacioso y limpio. Rocco el propietario muy amable y siempre disponible.',
+      author: 'Elisa',
+      country: 'Italia',
+    },
+    {
+      stars: 5,
+      quote: 'Ubicación óptima tanto para el centro histórico como para el mar. Amplio aparcamiento cercano. El anfitrión Rocco nos dio valiosos consejos y estuvo siempre disponible.',
+      author: 'Nicola',
+      country: 'Italia',
+    },
+    {
+      stars: 5,
+      quote: 'Ubicación perfecta con vistas a una de las plazas principales. El apartamento era muy espacioso, moderno y bien cuidado. Rocco fue muy acogedor. ¡Muy recomendable!',
+      author: 'Paul',
+      country: 'Canadá',
+    },
+    {
+      stars: 5,
+      quote: 'La ubicación no puede ser mejor, todo a poca distancia. Alto nivel de mobiliario y anfitrión profesional. Organización perfecta y recibimiento muy amable.',
+      author: 'Andreas',
+      country: 'Alemania',
+    },
+  ],
+};

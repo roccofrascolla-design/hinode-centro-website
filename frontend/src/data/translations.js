@@ -796,6 +796,7 @@ nav: {
     subtitle: 'Elegancia, historia y vistas panorámicas en el corazón del casco antiguo de Vieste',
     cta: 'Consultar Disponibilidad',
     ctaSecondary: 'Descubrir Más',
+    trustLine: '⭐ Valoración 9,8/10 en Booking.com · 🏆 Traveller Review Awards 2026',
   },
   
   // Why Choose Section

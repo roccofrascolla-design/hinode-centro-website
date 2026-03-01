@@ -14,6 +14,7 @@ import Gallery from "./components/Gallery";
 import Booking from "./components/Booking";
 import HouseRules from "./components/HouseRules";
 import FAQ from "./components/FAQ";
+import Awards from "./components/Awards";
 import Footer from "./components/Footer";
 
 function App() {
@@ -33,6 +34,7 @@ function App() {
           <Booking />
           <HouseRules />
           <FAQ />
+          <Awards />
         </main>
         <Footer />
         <Toaster position="top-right" />

@@ -229,11 +229,12 @@ const Booking = () => {
               </div>
               <button
                 type="submit"
-                className="w-full px-6 py-4 bg-[#C2A878] text-white font-light tracking-wide rounded-sm hover:bg-[#2E4A5B] transition-all duration-300 hover:shadow-lg flex items-center justify-center space-x-2"
+                disabled={isSubmitting}
+                className="w-full px-6 py-4 bg-[#C2A878] text-white font-light tracking-wide rounded-sm hover:bg-[#2E4A5B] transition-all duration-300 hover:shadow-lg flex items-center justify-center space-x-2 disabled:opacity-50 disabled:cursor-not-allowed"
                 style={{ fontFamily: "'Montserrat', sans-serif" }}
               >
                 <Send size={20} />
-                <span>{t.booking.submit}</span>
+                <span>{isSubmitting ? (t.booking.sending || 'Sending...') : t.booking.submit}</span>
               </button>
             </form>
           </div>

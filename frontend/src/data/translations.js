@@ -174,6 +174,9 @@ export const translations = {
       submit: 'Invia Richiesta',
       whatsappText: 'Contattaci su WhatsApp',
       orText: 'oppure',
+      successMessage: 'Richiesta inviata! Ti contatteremo presto.',
+      errorMessage: 'Qualcosa è andato storto. Riprova o scrivici a hinodecentrovieste@gmail.com',
+      sending: 'Invio in corso...',
     },
     
     // House Rules Section

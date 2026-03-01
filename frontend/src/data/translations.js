@@ -1000,6 +1000,10 @@ nav: {
     terms: 'Términos y Condiciones',
     rights: '© 2025 Hinode Centro. Todos los derechos reservados.',
   },
+  awards: {
+    title: 'Reconocimientos',
+    subtitle: 'Traveller Review Awards 2026 – Puntuación 9,8/10 en Booking.com',
+  },
 };
 // Update navigation text (remove articles)
 translations.it.nav.apartment = 'Appartamento';

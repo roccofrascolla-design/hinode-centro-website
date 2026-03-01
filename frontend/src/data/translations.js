@@ -410,6 +410,9 @@ export const translations = {
       submit: 'Send Request',
       whatsappText: 'Contact us on WhatsApp',
       orText: 'or',
+      successMessage: 'Request sent! We will contact you soon.',
+      errorMessage: 'Something went wrong. Please try again or email us at hinodecentrovieste@gmail.com',
+      sending: 'Sending...',
     },
     
     // House Rules Section

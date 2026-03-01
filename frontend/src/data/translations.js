@@ -174,6 +174,9 @@ export const translations = {
       submit: 'Invia Richiesta',
       whatsappText: 'Contattaci su WhatsApp',
       orText: 'oppure',
+      successMessage: 'Richiesta inviata! Ti contatteremo presto.',
+      errorMessage: 'Qualcosa è andato storto. Riprova o scrivici a hinodecentrovieste@gmail.com',
+      sending: 'Invio in corso...',
     },
     
     // House Rules Section
@@ -407,6 +410,9 @@ export const translations = {
       submit: 'Send Request',
       whatsappText: 'Contact us on WhatsApp',
       orText: 'or',
+      successMessage: 'Request sent! We will contact you soon.',
+      errorMessage: 'Something went wrong. Please try again or email us at hinodecentrovieste@gmail.com',
+      sending: 'Sending...',
     },
     
     // House Rules Section
@@ -573,6 +579,9 @@ translations.fr = {
     submit: 'Envoyer la Demande',
     whatsappText: 'Contactez-nous sur WhatsApp',
     orText: 'ou',
+    successMessage: 'Demande envoyée! Nous vous contacterons bientôt.',
+    errorMessage: 'Une erreur s\'est produite. Réessayez ou écrivez-nous à hinodecentrovieste@gmail.com',
+    sending: 'Envoi en cours...',
   },
   houseRules: {
     title: 'Règlement Intérieur',
@@ -730,6 +739,9 @@ translations.de = {
     submit: 'Anfrage Senden',
     whatsappText: 'Kontaktieren Sie uns über WhatsApp',
     orText: 'oder',
+    successMessage: 'Anfrage gesendet! Wir werden uns bald bei Ihnen melden.',
+    errorMessage: 'Etwas ist schief gelaufen. Bitte versuchen Sie es erneut oder schreiben Sie uns an hinodecentrovieste@gmail.com',
+    sending: 'Wird gesendet...',
   },
   houseRules: {
     title: 'Hausregeln',
@@ -955,6 +967,9 @@ nav: {
     submit: 'Enviar Solicitud',
     whatsappText: 'Contáctanos por WhatsApp',
     orText: 'o',
+    successMessage: '¡Solicitud enviada! Te contactaremos pronto.',
+    errorMessage: 'Algo salió mal. Inténtalo de nuevo o escríbenos a hinodecentrovieste@gmail.com',
+    sending: 'Enviando...',
   },
   
   // House Rules Section

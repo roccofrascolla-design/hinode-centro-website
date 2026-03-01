@@ -6,17 +6,25 @@ const SEO = () => {
 
   useEffect(() => {
     // Meta title
-    const title =
-      language === 'it'
-        ? 'Hinode Centro – Luxury Sea View Apartment in Vieste | Centro Storico'
-        : 'Hinode Centro – Luxury Sea View Apartment in Vieste | Historic Center';
+    const titles = {
+      it: 'Hinode Centro – Luxury Sea View Apartment in Vieste | Centro Storico',
+      en: 'Hinode Centro – Luxury Sea View Apartment in Vieste | Historic Center',
+      fr: 'Hinode Centro – Appartement de Luxe Vue Mer à Vieste | Centre Historique',
+      de: 'Hinode Centro – Luxus-Meerblick-Wohnung in Vieste | Historisches Zentrum',
+      es: 'Hinode Centro – Apartamento de Lujo con Vista al Mar en Vieste | Centro Histórico',
+    };
+    const title = titles[language] || titles.en;
     document.title = title;
 
     // Meta description
-    const description =
-      language === 'it'
-        ? 'Appartamento di lusso con vista mare nel centro storico di Vieste. Castello Svevo, spiagge a 5 minuti. Esperienza boutique autentica.'
-        : 'Luxury sea view apartment in Vieste historic center. Swabian Castle views, 5-min walk to beaches. Authentic boutique experience.';
+    const descriptions = {
+      it: 'Appartamento di lusso con vista mare nel centro storico di Vieste. Castello Svevo, spiagge a 5 minuti. Esperienza boutique autentica.',
+      en: 'Luxury sea view apartment in Vieste historic center. Swabian Castle views, 5-min walk to beaches. Authentic boutique experience.',
+      fr: 'Appartement de luxe vue mer dans le centre historique de Vieste. Vues sur le château, 5 minutes à pied des plages. Expérience boutique authentique.',
+      de: 'Luxus-Meerblick-Wohnung im historischen Zentrum von Vieste. Schlossblick, 5 Gehminuten zu Stränden. Authentisches Boutique-Erlebnis.',
+      es: 'Apartamento de lujo con vista al mar en el centro histórico de Vieste. Vistas al Castillo Suevo, 5 minutos andando a las playas. Experiencia boutique auténtica.',
+    };
+    const description = descriptions[language] || descriptions.en;
 
     // Update or create meta tags
     updateMetaTag('description', description);

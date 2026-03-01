@@ -105,7 +105,7 @@ const Header = () => {
 
             {/* Language Selector */}
             <div className="flex items-center gap-1 border border-[#D8D2C8] rounded-sm overflow-hidden">
-              {['IT', 'EN', 'FR', 'DE'].map((lang) => (
+              {['IT', 'EN', 'FR', 'DE', 'ES'].map((lang) => (
                 <button
                   key={lang}
                   onClick={() => setLanguage(lang.toLowerCase())}

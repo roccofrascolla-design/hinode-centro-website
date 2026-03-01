@@ -36,7 +36,7 @@ const SEO = () => {
     updateMetaTag('og:type', 'website', 'property');
     updateMetaTag('og:url', 'https://castello-balcony.preview.emergentagent.com', 'property');
     updateMetaTag('og:image', 'https://customer-assets.emergentagent.com/job_castello-balcony/artifacts/0yfrjq5g_DSC_3618.jpeg', 'property');
-    updateMetaTag('og:locale', language === 'it' ? 'it_IT' : 'en_US', 'property');
+    updateMetaTag('og:locale', language === 'it' ? 'it_IT' : language === 'en' ? 'en_US' : language === 'fr' ? 'fr_FR' : language === 'de' ? 'de_DE' : language === 'es' ? 'es_ES' : 'en_US', 'property');
 
     // Twitter Card tags
     updateMetaTag('twitter:card', 'summary_large_image');

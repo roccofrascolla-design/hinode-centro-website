@@ -223,6 +223,12 @@ export const translations = {
       terms: 'Termini e Condizioni',
       rights: '© 2025 Hinode Centro. Tutti i diritti riservati.',
     },
+    
+    // Awards Section
+    awards: {
+      title: 'Riconoscimenti',
+      subtitle: 'Traveller Review Awards 2026 – Valutazione 9,8/10 su Booking.com',
+    },
   },
   
   en: {
@@ -449,6 +455,12 @@ export const translations = {
       terms: 'Terms & Conditions',
       rights: '© 2025 Hinode Centro. All rights reserved.',
     },
+    
+    // Awards Section
+    awards: {
+      title: 'Awards',
+      subtitle: 'Traveller Review Awards 2026 – Rated 9.8/10 on Booking.com',
+    },
   },
 };
 // Add French and German translations
@@ -602,6 +614,10 @@ translations.fr = {
     terms: 'Conditions Générales',
     rights: '© 2025 Hinode Centro. Tous droits réservés.',
   },
+  awards: {
+    title: 'Récompenses',
+    subtitle: 'Traveller Review Awards 2026 – Noté 9,8/10 sur Booking.com',
+  },
 };
 
 translations.de = {
@@ -753,6 +769,10 @@ translations.de = {
     privacy: 'Datenschutzerklärung',
     terms: 'AGB',
     rights: '© 2025 Hinode Centro. Alle Rechte vorbehalten.',
+  },
+  awards: {
+    title: 'Auszeichnungen',
+    subtitle: 'Traveller Review Awards 2026 – Bewertung 9,8/10 auf Booking.com',
   },
 };
 
@@ -979,6 +999,10 @@ nav: {
     privacy: 'Política de Privacidad',
     terms: 'Términos y Condiciones',
     rights: '© 2025 Hinode Centro. Todos los derechos reservados.',
+  },
+  awards: {
+    title: 'Reconocimientos',
+    subtitle: 'Traveller Review Awards 2026 – Puntuación 9,8/10 en Booking.com',
   },
 };
 // Update navigation text (remove articles)

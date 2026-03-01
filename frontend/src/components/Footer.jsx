@@ -136,6 +136,14 @@ const Footer = () => {
                   {t.footer.terms}
                 </button>
               </li>
+              <li>
+                <p
+                  className="text-xs text-gray-500 font-light mt-4"
+                  style={{ fontFamily: "'Montserrat', sans-serif" }}
+                >
+                  CIN: IT071060C200112106
+                </p>
+              </li>
             </ul>
             
             {/* Social Links */}

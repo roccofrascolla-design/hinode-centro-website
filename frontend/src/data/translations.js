@@ -754,12 +754,14 @@ translations.de = {
     terms: 'AGB',
     rights: '© 2025 Hinode Centro. Alle Rechte vorbehalten.',
   },
-  es: {
-    // Navigation
-    nav: {
-      home: 'Inicio',
-      apartment: 'El Apartamento',
-      location: 'Ubicación',
+};
+
+translations.es = {
+  // Navigation
+  nav: {
+    home: 'Inicio',
+    apartment: 'El Apartamento',
+    location: 'Ubicación',
       experience: 'La Experiencia',
       gallery: 'Galería',
       booking: 'Reservar',

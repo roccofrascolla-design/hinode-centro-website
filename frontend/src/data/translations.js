@@ -579,6 +579,9 @@ translations.fr = {
     submit: 'Envoyer la Demande',
     whatsappText: 'Contactez-nous sur WhatsApp',
     orText: 'ou',
+    successMessage: 'Demande envoyée! Nous vous contacterons bientôt.',
+    errorMessage: 'Une erreur s\'est produite. Réessayez ou écrivez-nous à hinodecentrovieste@gmail.com',
+    sending: 'Envoi en cours...',
   },
   houseRules: {
     title: 'Règlement Intérieur',
@@ -736,6 +739,9 @@ translations.de = {
     submit: 'Anfrage Senden',
     whatsappText: 'Kontaktieren Sie uns über WhatsApp',
     orText: 'oder',
+    successMessage: 'Anfrage gesendet! Wir werden uns bald bei Ihnen melden.',
+    errorMessage: 'Etwas ist schief gelaufen. Bitte versuchen Sie es erneut oder schreiben Sie uns an hinodecentrovieste@gmail.com',
+    sending: 'Wird gesendet...',
   },
   houseRules: {
     title: 'Hausregeln',

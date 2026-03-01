@@ -223,6 +223,12 @@ export const translations = {
       terms: 'Termini e Condizioni',
       rights: '© 2025 Hinode Centro. Tutti i diritti riservati.',
     },
+    
+    // Awards Section
+    awards: {
+      title: 'Riconoscimenti',
+      subtitle: 'Traveller Review Awards 2026 – Valutazione 9,8/10 su Booking.com',
+    },
   },
   
   en: {

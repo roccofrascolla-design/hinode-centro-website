@@ -250,6 +250,7 @@ export const translations = {
       subtitle: 'Elegance, history, and panoramic views in the heart of Vieste\'s old town',
       cta: 'Check Availability',
       ctaSecondary: 'Discover More',
+      trustLine: '⭐ Rated 9.8/10 on Booking.com · 🏆 Traveller Review Awards 2026',
     },
     
     // Why Choose Section

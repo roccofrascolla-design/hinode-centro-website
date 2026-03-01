@@ -614,6 +614,10 @@ translations.fr = {
     terms: 'Conditions Générales',
     rights: '© 2025 Hinode Centro. Tous droits réservés.',
   },
+  awards: {
+    title: 'Récompenses',
+    subtitle: 'Traveller Review Awards 2026 – Noté 9,8/10 sur Booking.com',
+  },
 };
 
 translations.de = {
@@ -765,6 +769,10 @@ translations.de = {
     privacy: 'Datenschutzerklärung',
     terms: 'AGB',
     rights: '© 2025 Hinode Centro. Alle Rechte vorbehalten.',
+  },
+  awards: {
+    title: 'Auszeichnungen',
+    subtitle: 'Traveller Review Awards 2026 – Bewertung 9,8/10 auf Booking.com',
   },
 };
 

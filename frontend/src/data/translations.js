@@ -994,6 +994,9 @@ translations.fr.nav.experience = 'Expérience';
 translations.de.nav.apartment = 'Wohnung';
 translations.de.nav.experience = 'Erlebnis';
 
+translations.es.nav.apartment = 'Apartamento';
+translations.es.nav.experience = 'Experiencia';
+
 // Add testimonials section
 translations.it.testimonials = {
   title: 'Cosa Dicono i Nostri Ospiti',

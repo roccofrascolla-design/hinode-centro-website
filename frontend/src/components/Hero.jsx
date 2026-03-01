@@ -68,6 +68,16 @@ const Hero = () => {
               {t.hero.subtitle}
             </p>
 
+            {/* Trust Line - Subtle Above CTAs */}
+            {t.hero.trustLine && (
+              <p
+                className="text-xs md:text-sm text-white/75 font-light tracking-wide mt-6"
+                style={{ fontFamily: "'Montserrat', sans-serif" }}
+              >
+                {t.hero.trustLine}
+              </p>
+            )}
+
             {/* CTA Buttons */}
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4 pt-8">
               <button

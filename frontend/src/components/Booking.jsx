@@ -4,7 +4,8 @@ import { Send, MessageCircle, Check } from 'lucide-react';
 import { toast } from 'sonner';
 
 const Booking = () => {
-  const { t } = useLanguage();
+  const { t, language } = useLanguage();
+  const [isSubmitting, setIsSubmitting] = useState(false);
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -22,28 +23,63 @@ const Booking = () => {
     });
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
     
-    // Mock form submission
-    console.log('Booking request submitted:', formData);
+    // Prevent double submission
+    if (isSubmitting) return;
     
-    toast.success(
-      t.language === 'it'
-        ? 'Richiesta inviata! Ti contatteremo presto.'
-        : 'Request sent! We will contact you soon.'
-    );
+    setIsSubmitting(true);
     
-    // Reset form
-    setFormData({
-      name: '',
-      email: '',
-      phone: '',
-      checkin: '',
-      checkout: '',
-      guests: '2',
-      message: '',
-    });
+    try {
+      // Prepare payload for Formspree
+      const payload = {
+        name: formData.name,
+        email: formData.email,
+        phone: formData.phone || 'Not provided',
+        checkIn: formData.checkin,
+        checkOut: formData.checkout,
+        guests: formData.guests,
+        message: formData.message || 'No additional message',
+        pageUrl: window.location.href,
+        language: language,
+      };
+      
+      // Send to Formspree
+      const response = await fetch('https://formspree.io/f/mvzbnvor', {
+        method: 'POST',
+        headers: {
+          'Accept': 'application/json',
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(payload),
+      });
+      
+      if (response.ok) {
+        // Success
+        toast.success(t.booking.successMessage || 'Request sent! We will contact you soon.');
+        
+        // Reset form
+        setFormData({
+          name: '',
+          email: '',
+          phone: '',
+          checkin: '',
+          checkout: '',
+          guests: '2',
+          message: '',
+        });
+      } else {
+        // Error response from Formspree
+        throw new Error('Formspree error');
+      }
+    } catch (error) {
+      // Show error message
+      console.error('Booking submission error:', error);
+      toast.error(t.booking.errorMessage || 'Something went wrong. Please try again or email us at hinodecentrovieste@gmail.com');
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   const whatsappNumber = '+393405079259';

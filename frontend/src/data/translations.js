@@ -455,6 +455,12 @@ export const translations = {
       terms: 'Terms & Conditions',
       rights: '© 2025 Hinode Centro. All rights reserved.',
     },
+    
+    // Awards Section
+    awards: {
+      title: 'Awards',
+      subtitle: 'Traveller Review Awards 2026 – Rated 9.8/10 on Booking.com',
+    },
   },
 };
 // Add French and German translations

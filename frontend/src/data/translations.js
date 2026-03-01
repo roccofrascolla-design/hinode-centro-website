@@ -961,6 +961,9 @@ nav: {
     submit: 'Enviar Solicitud',
     whatsappText: 'Contáctanos por WhatsApp',
     orText: 'o',
+    successMessage: '¡Solicitud enviada! Te contactaremos pronto.',
+    errorMessage: 'Algo salió mal. Inténtalo de nuevo o escríbenos a hinodecentrovieste@gmail.com',
+    sending: 'Enviando...',
   },
   
   // House Rules Section

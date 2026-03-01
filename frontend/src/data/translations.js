@@ -17,6 +17,7 @@ export const translations = {
       subtitle: 'Eleganza, storia e vista panoramica nel cuore del centro storico di Vieste',
       cta: 'Verifica Disponibilità',
       ctaSecondary: 'Scopri di Più',
+      trustLine: '⭐ Valutazione 9,8/10 su Booking.com · 🏆 Traveller Review Awards 2026',
     },
     
     // Why Choose Section

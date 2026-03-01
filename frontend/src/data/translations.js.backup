@@ -757,230 +757,232 @@ translations.de = {
 };
 
 translations.es = {
-// Navigation
-nav: {
-  home: 'Inicio',
-  apartment: 'El Apartamento',
-  location: 'Ubicación',
-    experience: 'La Experiencia',
-    gallery: 'Galería',
-    booking: 'Reservar',
-  },
-  
-  // Hero Section
-  hero: {
-    titleLine1: 'Hinode Centro',
-    titleLine2: 'Apartamento de Lujo con Vista al Mar en Vieste',
-    subtitle: 'Elegancia, historia y vistas panorámicas en el corazón del casco antiguo de Vieste',
-    cta: 'Consultar Disponibilidad',
-    ctaSecondary: 'Descubrir Más',
-  },
-  
-  // Why Choose Section
-  whyChoose: {
-    title: 'Por Qué Elegir Hinode Centro',
-    subtitle: 'Un apartamento boutique que cuenta una historia',
-    feature1Title: 'Vista Panorámica Única',
-    feature1Text: 'Castillo Suevo, faro de Vieste y mar Adriático desde tu ventana',
-    feature2Title: 'Ubicación Privilegiada',
-    feature2Text: 'En el corazón del centro histórico, a 5 minutos andando de las playas',
-    feature3Title: 'Elegancia Mediterránea',
-    feature3Text: 'Edificio histórico del siglo XIX con comodidades modernas',
-    feature4Title: 'Experiencia Auténtica',
-    feature4Text: 'Vive Vieste como un local, no como un turista',
-  },
-  
-  // Apartment Section
-  apartment: {
-    title: 'El Apartamento',
-    subtitle: 'Donde el confort se encuentra con la historia',
-    intro: "Situado en el corazón histórico de Vieste, Hinode Centro se encuentra dentro de un encantador edificio del siglo XIX, ofreciendo un ambiente auténtico y elegante en la parte más característica de la ciudad. Desde la zona de estar, los huéspedes disfrutan de vistas extraordinarias al Castello Svevo y al faro — símbolos de la historia marítima de Vieste.",
-    livingTitle: 'Zona de Estar',
-    livingText: 'Espacio acogedor con sofá cama y cocina americana totalmente equipada, ventanas panorámicas que enmarcan la costa adriática.',
-    bedroomTitle: 'Dormitorio',
-    bedroomText: 'Dormitorio con espectaculares vistas al mar y al puerto. Cada ventana captura una mezcla única de historia y naturaleza.',
-    bathroomTitle: 'Baño Privado',
-    bathroomText: 'Baño moderno con ducha, equipado con todas las comodidades.',
-    amenitiesTitle: 'Servicios',
-    amenitiesKitchen: 'Cocina',
-    amenitiesBedroom: 'Dormitorio',
-    amenitiesBathroom: 'Baño',
-    amenitiesLiving: 'Zona de Estar',
-    amenitiesMedia: 'Medios y Tecnología',
-    amenitiesRoom: 'Características de la Habitación',
-    amenitiesOutdoor: 'Exteriores',
-    amenitiesGeneral: 'General',
-    amenities: {
-      kitchen: [
-        'Mesa de comedor',
-        'Cafetera',
-        'Placa de cocina',
-        'Horno',
-        'Utensilios de cocina',
-        'Hervidor eléctrico',
-        'Frigorífico',
-        'Cocina americana',
-        'Lavavajillas',
+  // Navigation
+  nav: {
+    home: 'Inicio',
+    apartment: 'El Apartamento',
+    location: 'Ubicación',
+      experience: 'La Experiencia',
+      gallery: 'Galería',
+      booking: 'Reservar',
+    },
+    
+    // Hero Section
+    hero: {
+      titleLine1: 'Hinode Centro',
+      titleLine2: 'Apartamento de Lujo con Vista al Mar en Vieste',
+      subtitle: 'Elegancia, historia y vistas panorámicas en el corazón del casco antiguo de Vieste',
+      cta: 'Consultar Disponibilidad',
+      ctaSecondary: 'Descubrir Más',
+    },
+    
+    // Why Choose Section
+    whyChoose: {
+      title: 'Por Qué Elegir Hinode Centro',
+      subtitle: 'Un apartamento boutique que cuenta una historia',
+      feature1Title: 'Vista Panorámica Única',
+      feature1Text: 'Castillo Suevo, faro de Vieste y mar Adriático desde tu ventana',
+      feature2Title: 'Ubicación Privilegiada',
+      feature2Text: 'En el corazón del centro histórico, a 5 minutos andando de las playas',
+      feature3Title: 'Elegancia Mediterránea',
+      feature3Text: 'Edificio histórico del siglo XIX con comodidades modernas',
+      feature4Title: 'Experiencia Auténtica',
+      feature4Text: 'Vive Vieste como un local, no como un turista',
+    },
+    
+    // Apartment Section
+    apartment: {
+      title: 'El Apartamento',
+      subtitle: 'Donde el confort se encuentra con la historia',
+      intro: "Situado en el corazón histórico de Vieste, Hinode Centro se encuentra dentro de un encantador edificio del siglo XIX, ofreciendo un ambiente auténtico y elegante en la parte más característica de la ciudad. Desde la zona de estar, los huéspedes disfrutan de vistas extraordinarias al Castello Svevo y al faro — símbolos de la historia marítima de Vieste.",
+      livingTitle: 'Zona de Estar',
+      livingText: 'Espacio acogedor con sofá cama y cocina americana totalmente equipada, ventanas panorámicas que enmarcan la costa adriática.',
+      bedroomTitle: 'Dormitorio',
+      bedroomText: 'Dormitorio con espectaculares vistas al mar y al puerto. Cada ventana captura una mezcla única de historia y naturaleza.',
+      bathroomTitle: 'Baño Privado',
+      bathroomText: 'Baño moderno con ducha, equipado con todas las comodidades.',
+      amenitiesTitle: 'Servicios',
+      amenitiesKitchen: 'Cocina',
+      amenitiesBedroom: 'Dormitorio',
+      amenitiesBathroom: 'Baño',
+      amenitiesLiving: 'Zona de Estar',
+      amenitiesMedia: 'Medios y Tecnología',
+      amenitiesRoom: 'Características de la Habitación',
+      amenitiesOutdoor: 'Exteriores',
+      amenitiesGeneral: 'General',
+      amenities: {
+        kitchen: [
+          'Mesa de comedor',
+          'Cafetera',
+          'Placa de cocina',
+          'Horno',
+          'Utensilios de cocina',
+          'Hervidor eléctrico',
+          'Frigorífico',
+          'Cocina americana',
+          'Lavavajillas',
+        ],
+        bedroom: [
+          'Ropa de cama',
+          'Armario / guardarropa',
+        ],
+        bathroom: [
+          'Papel higiénico',
+          'Toallas',
+          'Bidé',
+          'Ducha',
+          'Baño privado',
+          'Secador de pelo',
+          'WC',
+        ],
+        living: [
+          'Zona de comedor',
+          'Sofá',
+          'Chimenea',
+        ],
+        media: [
+          'Servicio de streaming (Netflix)',
+          'TV de pantalla plana',
+          'Canales vía satélite',
+          'TV',
+        ],
+        room: [
+          'Sofá cama',
+          'Tendedero',
+          'Perchero',
+          'Mosquiteras',
+          'Suelo de mármol o baldosas',
+          'Entrada privada',
+          'Calefacción',
+          'Plancha',
+        ],
+        outdoor: [
+          'Frente al mar',
+          'Balcón',
+          'Terraza',
+        ],
+        general: [
+          'Aire acondicionado',
+          'Propiedad completamente para no fumadores',
+          'Caja fuerte',
+          'Wi-Fi',
+        ],
+      },
+    },
+    
+    // Location Section
+    location: {
+      title: 'La Ubicación',
+      subtitle: 'En el corazón vibrante de Vieste',
+      intro: 'A solo 5 minutos andando de las playas doradas de San Lorenzo y Pizzomunno, Hinode Centro está ubicado idealmente para los huéspedes que desean explorar la belleza natural y el encanto histórico de Vieste.',
+      nearbyTitle: 'En las Cercanías',
+      nearby: [
+        { name: 'Castillo Suevo', distance: '2 minutos andando' },
+        { name: 'Playa de San Lorenzo', distance: '5 minutos andando' },
+        { name: 'Playa del Pizzomunno', distance: '5 minutos andando' },
+        { name: 'Puerto de Vieste', distance: '3 minutos andando' },
+        { name: 'Restaurantes típicos', distance: '1 minuto andando' },
+        { name: 'Faro de Vieste', distance: 'vista directa' },
       ],
-      bedroom: [
-        'Ropa de cama',
-        'Armario / guardarropa',
+      atmosphereTitle: 'La Atmósfera',
+      atmosphereText: 'Callejuelas blancas, aroma a mar, atardeceres sobre el castillo. Aquí puedes vivir la verdadera esencia de Vieste: auténtica, romántica, inolvidable.',
+    },
+    
+    // Experience Section
+    experience: {
+      title: 'La Experiencia Hinode',
+      subtitle: 'Esto no es solo un apartamento',
+      intro: 'Es un balcón privado sobre el mar Adriático. Es despertar con la luz del sol bailando sobre el agua. Es cenar al atardecer con el Castello Svevo iluminado frente a ti.',
+      moment1Title: 'El Despertar',
+      moment1Text: 'Abre las ventanas. El sol sale sobre el mar, la brisa entra suave. El café sabe diferente cuando lo tomas con estas vistas.',
+      moment2Title: 'El Paseo',
+      moment2Text: 'Sales de casa y ya estás en el corazón del pueblo. Callejuelas blancas, boutiques artesanas, trattorias auténticas. Todo a un paso.',
+      moment3Title: 'El Mar',
+      moment3Text: 'Cinco minutos y estás en la playa. Arena dorada, agua cristalina. Vuelves cuando quieras, sin prisa.',
+      moment4Title: 'La Tarde',
+      moment4Text: 'El castillo se ilumina. La cena en la terraza se convierte en un momento mágico. El mar susurra historias antiguas.',
+    },
+    
+    // Gallery Section
+    gallery: {
+      title: 'Galería',
+      subtitle: 'Descubre tu refugio junto al mar',
+    },
+    
+    // Booking Section
+    booking: {
+      title: 'Reserva Directamente',
+      subtitle: 'La mejor forma de reservar es directamente con nosotros',
+      benefits: [
+        'Mejor precio garantizado',
+        'Asistencia directa y personalizada',
+        'Mayor flexibilidad',
+        'Consejos locales exclusivos',
       ],
-      bathroom: [
-        'Papel higiénico',
-        'Toallas',
-        'Bidé',
-        'Ducha',
-        'Baño privado',
-        'Secador de pelo',
-        'WC',
-      ],
-      living: [
-        'Zona de comedor',
-        'Sofá',
-        'Chimenea',
-      ],
-      media: [
-        'Servicio de streaming (Netflix)',
-        'TV de pantalla plana',
-        'Canales vía satélite',
-        'TV',
-      ],
-      room: [
-        'Sofá cama',
-        'Tendedero',
-        'Perchero',
-        'Mosquiteras',
-        'Suelo de mármol o baldosas',
-        'Entrada privada',
-        'Calefacción',
-        'Plancha',
-      ],
-      outdoor: [
-        'Frente al mar',
-        'Balcón',
-        'Terraza',
-      ],
-      general: [
-        'Aire acondicionado',
-        'Propiedad completamente para no fumadores',
-        'Caja fuerte',
-        'Wi-Fi',
-      ],
+      formTitle: 'Solicitar Disponibilidad',
+      namePlaceholder: 'Tu nombre',
+      emailPlaceholder: 'Tu email',
+      phonePlaceholder: 'Teléfono (opcional)',
+      checkinPlaceholder: 'Entrada',
+      checkoutPlaceholder: 'Salida',
+      guestsPlaceholder: 'Número de huéspedes',
+      messagePlaceholder: 'Mensaje (opcional)',
+      submit: 'Enviar Solicitud',
+      whatsappText: 'Contáctanos por WhatsApp',
+      orText: 'o',
+    },
+    
+    // House Rules Section
+    houseRules: {
+      title: 'Normas de la Casa',
+      checkinTitle: 'Entrada',
+      checkinTime: '16:00 – 23:00',
+      checkoutTitle: 'Salida',
+      checkoutTime: '08:00 – 10:00',
+      depositTitle: 'Depósito Reembolsable',
+      depositText: '€100 (efectivo, devuelto tras inspección)',
+      smokingTitle: 'Fumar',
+      smokingText: 'No permitido',
+      partiesTitle: 'Fiestas y Eventos',
+      partiesText: 'No permitidos',
+      quietTitle: 'Horario de Silencio',
+      quietText: '00:00 – 08:00',
+      petsTitle: 'Mascotas',
+      petsText: 'No permitidas',
+      ageTitle: 'Edad Mínima',
+      ageText: 'Sin restricción',
+    },
+    
+    // FAQ Section
+    faq: {
+      title: 'Preguntas Frecuentes',
+      q1: '¿Es necesario el coche?',
+      a1: 'No. El apartamento está en el centro histórico, a 5 minutos andando de las playas y todos los servicios. Puedes vivir Vieste sin coche.',
+      q2: '¿Cuántas personas puede alojar?',
+      a2: 'El apartamento puede alojar cómodamente hasta 4 personas: 2 en la habitación doble y 2 en el sofá cama.',
+      q3: '¿Hay aparcamiento?',
+      a3: 'El centro histórico es zona de tráfico limitado. Te proporcionaremos indicaciones para los aparcamientos públicos cercanos.',
+      q4: '¿Horarios de entrada y salida?',
+      a4: 'Entrada de 16:00 a 23:00, salida de 08:00 a 10:00.',
+      q5: '¿Se aceptan mascotas?',
+      a5: 'Lo sentimos, no se permiten mascotas.',
+      q6: '¿Política de cancelación?',
+      a6: 'Cancelación gratuita hasta 7 días antes de la entrada. Para más detalles, contáctanos.',
+    },
+    
+    // Footer
+    footer: {
+      tagline: 'Tu balcón sobre el mar Adriático',
+      quickLinks: 'Enlaces Rápidos',
+      contact: 'Contacto',
+      legal: 'Información Legal',
+      privacy: 'Política de Privacidad',
+      terms: 'Términos y Condiciones',
+      rights: '© 2025 Hinode Centro. Todos los derechos reservados.',
     },
   },
-  
-  // Location Section
-  location: {
-    title: 'La Ubicación',
-    subtitle: 'En el corazón vibrante de Vieste',
-    intro: 'A solo 5 minutos andando de las playas doradas de San Lorenzo y Pizzomunno, Hinode Centro está ubicado idealmente para los huéspedes que desean explorar la belleza natural y el encanto histórico de Vieste.',
-    nearbyTitle: 'En las Cercanías',
-    nearby: [
-      { name: 'Castillo Suevo', distance: '2 minutos andando' },
-      { name: 'Playa de San Lorenzo', distance: '5 minutos andando' },
-      { name: 'Playa del Pizzomunno', distance: '5 minutos andando' },
-      { name: 'Puerto de Vieste', distance: '3 minutos andando' },
-      { name: 'Restaurantes típicos', distance: '1 minuto andando' },
-      { name: 'Faro de Vieste', distance: 'vista directa' },
-    ],
-    atmosphereTitle: 'La Atmósfera',
-    atmosphereText: 'Callejuelas blancas, aroma a mar, atardeceres sobre el castillo. Aquí puedes vivir la verdadera esencia de Vieste: auténtica, romántica, inolvidable.',
-  },
-  
-  // Experience Section
-  experience: {
-    title: 'La Experiencia Hinode',
-    subtitle: 'Esto no es solo un apartamento',
-    intro: 'Es un balcón privado sobre el mar Adriático. Es despertar con la luz del sol bailando sobre el agua. Es cenar al atardecer con el Castello Svevo iluminado frente a ti.',
-    moment1Title: 'El Despertar',
-    moment1Text: 'Abre las ventanas. El sol sale sobre el mar, la brisa entra suave. El café sabe diferente cuando lo tomas con estas vistas.',
-    moment2Title: 'El Paseo',
-    moment2Text: 'Sales de casa y ya estás en el corazón del pueblo. Callejuelas blancas, boutiques artesanas, trattorias auténticas. Todo a un paso.',
-    moment3Title: 'El Mar',
-    moment3Text: 'Cinco minutos y estás en la playa. Arena dorada, agua cristalina. Vuelves cuando quieras, sin prisa.',
-    moment4Title: 'La Tarde',
-    moment4Text: 'El castillo se ilumina. La cena en la terraza se convierte en un momento mágico. El mar susurra historias antiguas.',
-  },
-  
-  // Gallery Section
-  gallery: {
-    title: 'Galería',
-    subtitle: 'Descubre tu refugio junto al mar',
-  },
-  
-  // Booking Section
-  booking: {
-    title: 'Reserva Directamente',
-    subtitle: 'La mejor forma de reservar es directamente con nosotros',
-    benefits: [
-      'Mejor precio garantizado',
-      'Asistencia directa y personalizada',
-      'Mayor flexibilidad',
-      'Consejos locales exclusivos',
-    ],
-    formTitle: 'Solicitar Disponibilidad',
-    namePlaceholder: 'Tu nombre',
-    emailPlaceholder: 'Tu email',
-    phonePlaceholder: 'Teléfono (opcional)',
-    checkinPlaceholder: 'Entrada',
-    checkoutPlaceholder: 'Salida',
-    guestsPlaceholder: 'Número de huéspedes',
-    messagePlaceholder: 'Mensaje (opcional)',
-    submit: 'Enviar Solicitud',
-    whatsappText: 'Contáctanos por WhatsApp',
-    orText: 'o',
-  },
-  
-  // House Rules Section
-  houseRules: {
-    title: 'Normas de la Casa',
-    checkinTitle: 'Entrada',
-    checkinTime: '16:00 – 23:00',
-    checkoutTitle: 'Salida',
-    checkoutTime: '08:00 – 10:00',
-    depositTitle: 'Depósito Reembolsable',
-    depositText: '€100 (efectivo, devuelto tras inspección)',
-    smokingTitle: 'Fumar',
-    smokingText: 'No permitido',
-    partiesTitle: 'Fiestas y Eventos',
-    partiesText: 'No permitidos',
-    quietTitle: 'Horario de Silencio',
-    quietText: '00:00 – 08:00',
-    petsTitle: 'Mascotas',
-    petsText: 'No permitidas',
-    ageTitle: 'Edad Mínima',
-    ageText: 'Sin restricción',
-  },
-  
-  // FAQ Section
-  faq: {
-    title: 'Preguntas Frecuentes',
-    q1: '¿Es necesario el coche?',
-    a1: 'No. El apartamento está en el centro histórico, a 5 minutos andando de las playas y todos los servicios. Puedes vivir Vieste sin coche.',
-    q2: '¿Cuántas personas puede alojar?',
-    a2: 'El apartamento puede alojar cómodamente hasta 4 personas: 2 en la habitación doble y 2 en el sofá cama.',
-    q3: '¿Hay aparcamiento?',
-    a3: 'El centro histórico es zona de tráfico limitado. Te proporcionaremos indicaciones para los aparcamientos públicos cercanos.',
-    q4: '¿Horarios de entrada y salida?',
-    a4: 'Entrada de 16:00 a 23:00, salida de 08:00 a 10:00.',
-    q5: '¿Se aceptan mascotas?',
-    a5: 'Lo sentimos, no se permiten mascotas.',
-    q6: '¿Política de cancelación?',
-    a6: 'Cancelación gratuita hasta 7 días antes de la entrada. Para más detalles, contáctanos.',
-  },
-  
-  // Footer
-  footer: {
-    tagline: 'Tu balcón sobre el mar Adriático',
-    quickLinks: 'Enlaces Rápidos',
-    contact: 'Contacto',
-    legal: 'Información Legal',
-    privacy: 'Política de Privacidad',
-    terms: 'Términos y Condiciones',
-    rights: '© 2025 Hinode Centro. Todos los derechos reservados.',
-  },
 };
+
 // Update navigation text (remove articles)
 translations.it.nav.apartment = 'Appartamento';
 translations.it.nav.experience = 'Esperienza';

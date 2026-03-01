@@ -17,13 +17,13 @@ export const LanguageProvider = ({ children }) => {
   useEffect(() => {
     // Check localStorage for saved preference
     const savedLang = localStorage.getItem('hinodeLang');
-    if (savedLang && ['it', 'en', 'fr', 'de'].includes(savedLang)) {
+    if (savedLang && ['it', 'en', 'fr', 'de', 'es'].includes(savedLang)) {
       setLanguage(savedLang);
     }
   }, []);
 
   const changeLanguage = (newLang) => {
-    if (['it', 'en', 'fr', 'de'].includes(newLang)) {
+    if (['it', 'en', 'fr', 'de', 'es'].includes(newLang)) {
       setLanguage(newLang);
       localStorage.setItem('hinodeLang', newLang);
     }

@@ -982,6 +982,8 @@ translations.es = {
     },
   },
 };
+
+// Update navigation text (remove articles)
 translations.it.nav.apartment = 'Appartamento';
 translations.it.nav.experience = 'Esperienza';
 

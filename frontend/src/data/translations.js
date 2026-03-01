@@ -481,6 +481,7 @@ translations.fr = {
     subtitle: 'Élégance, histoire et vues panoramiques au cœur de la vieille ville de Vieste',
     cta: 'Vérifier Disponibilité',
     ctaSecondary: 'Découvrir Plus',
+    trustLine: '⭐ Noté 9,8/10 sur Booking.com · 🏆 Traveller Review Awards 2026',
   },
   whyChoose: {
     title: 'Pourquoi Choisir Hinode Centro',
@@ -637,6 +638,7 @@ translations.de = {
     subtitle: 'Eleganz, Geschichte und Panoramablick im Herzen der Altstadt von Vieste',
     cta: 'Verfügbarkeit Prüfen',
     ctaSecondary: 'Mehr Entdecken',
+    trustLine: '⭐ Bewertung 9,8/10 auf Booking.com · 🏆 Traveller Review Awards 2026',
   },
   whyChoose: {
     title: 'Warum Hinode Centro Wählen',

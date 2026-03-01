@@ -96,30 +96,6 @@ const Hero = () => {
       >
         <ChevronDown size={32} />
       </button>
-
-      {/* CIN Badge - Bottom Left */}
-      <div className="absolute bottom-4 left-4 md:bottom-6 md:left-6">
-        <div 
-          className="px-3 py-1.5 md:px-4 md:py-2 rounded-lg backdrop-blur-md"
-          style={{ 
-            backgroundColor: 'rgba(0, 0, 0, 0.35)',
-            fontFamily: "'Montserrat', sans-serif"
-          }}
-        >
-          <p className="text-white/85 text-xs md:text-sm font-light tracking-wide">
-            CIN: IT071060C200112106
-          </p>
-        </div>
-      </div>
-
-      {/* Booking.com Award Badge - Bottom Right */}
-      <div className="absolute bottom-4 right-4 md:bottom-6 md:right-6">
-        <img
-          src="https://customer-assets.emergentagent.com/job_castello-balcony/artifacts/ryuri28t_Social-Media_TRA-2026.png"
-          alt="Booking.com Traveller Review Awards 2026 - 9.8/10"
-          className="w-24 h-24 md:w-32 md:h-32 lg:w-36 lg:h-36 object-contain drop-shadow-lg hover:scale-105 transition-transform duration-300"
-        />
-      </div>
     </section>
   );
 };

@@ -3,7 +3,10 @@ import { useLanguage } from '../context/LanguageContext';
 import { Star } from 'lucide-react';
 
 const Testimonials = () => {
-  const { t } = useLanguage();
+  const { t, language } = useLanguage();
+  
+  // Safe fallback to Italian if testimonials don't exist for current language
+  const testimonials = t.testimonials || { title: '', reviews: [] };
 
   return (
     <section className="py-20 lg:py-32 bg-gradient-to-b from-white to-[#F3EFE9]/30">
@@ -14,13 +17,13 @@ const Testimonials = () => {
             className="text-4xl md:text-5xl lg:text-6xl font-light text-gray-900 mb-4"
             style={{ fontFamily: "'Cormorant Garamond', serif" }}
           >
-            {t.testimonials.title}
+            {testimonials.title}
           </h2>
         </div>
 
         {/* Reviews Grid - 2 columns */}
         <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8">
-          {t.testimonials.reviews.map((review, index) => (
+          {(testimonials.reviews || []).map((review, index) => (
             <div
               key={index}
               className="bg-white rounded-lg shadow-md p-8 hover:shadow-lg transition-shadow duration-300"

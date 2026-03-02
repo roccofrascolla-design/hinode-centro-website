@@ -70,10 +70,6 @@ const Gallery = () => {
       url: 'https://customer-assets.emergentagent.com/job_castello-balcony/artifacts/283xch86_DSC_3635.jpeg',
       alt: 'Hinode brass nameplate',
     },
-    {
-      url: 'https://images.unsplash.com/photo-1661100193729-5b60a36d6d61',
-      alt: 'Vieste sunset coastline',
-    },
   ];
 
   return (

@@ -9,7 +9,7 @@ const Apartment = () => {
     {
       title: t.apartment.livingTitle,
       text: t.apartment.livingText,
-      image: 'https://customer-assets.emergentagent.com/job_castello-balcony/artifacts/z0w881aj_DSC_3530.jpeg',
+      image: 'https://customer-assets.emergentagent.com/job_castello-balcony/artifacts/8ek42vx1_DSC_3536.jpeg',
     },
     {
       title: t.apartment.bedroomTitle,

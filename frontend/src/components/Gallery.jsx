@@ -19,6 +19,10 @@ const Gallery = () => {
       alt: 'Living area with fully equipped kitchenette',
     },
     {
+      url: 'https://customer-assets.emergentagent.com/job_castello-balcony/artifacts/87gs0z4i_DSC_3564.jpeg',
+      alt: 'Elegant corridor with artistic details',
+    },
+    {
       url: 'https://customer-assets.emergentagent.com/job_castello-balcony/artifacts/xm0tns05_DSC_3617.jpeg',
       alt: 'Stunning terrace view overlooking the sea',
     },

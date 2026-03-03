@@ -36,17 +36,17 @@ const Header = () => {
     >
       <div className="container mx-auto px-6 lg:px-12">
         <div className="flex items-center justify-between py-5">
-          {/* Logo - Transparent version for improved readability */}
+          {/* Logo - Cropped transparent version */}
           <button
             onClick={() => scrollToSection('hero')}
-            className="flex items-center flex-shrink-0 pl-4 lg:pl-5"
+            className="flex items-center flex-shrink-0 pl-6 lg:pl-7"
           >
             <img
-              src="https://customer-assets.emergentagent.com/job_castello-balcony/artifacts/efj976z8_logo%20uinode%20trasparente.png"
+              src="https://customer-assets.emergentagent.com/job_castello-balcony/artifacts/5q1u2533_Progetto%20senza%20titolo.png"
               alt="Hinode Centro"
-              className="h-14 lg:h-[85px] w-auto"
+              className="h-10 lg:h-[65px] w-auto"
               style={{ 
-                filter: 'drop-shadow(0 2px 3px rgba(0,0,0,0.15))',
+                filter: 'drop-shadow(0 1px 2px rgba(0,0,0,0.1))',
                 objectFit: 'contain',
               }}
             />

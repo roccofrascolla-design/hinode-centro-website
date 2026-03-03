@@ -35,18 +35,20 @@ const Header = () => {
       }}
     >
       <div className="container mx-auto px-6 lg:px-12">
-        <div className="flex items-center justify-between py-4 lg:py-6">
-          {/* Logo - Increased size for readability */}
+        <div className="flex items-center justify-between py-6 lg:py-8">
+          {/* Logo - Premium size for visibility */}
           <button
             onClick={() => scrollToSection('hero')}
-            className="flex items-center flex-shrink-0 pl-6 lg:pl-8"
+            className="flex items-center shrink-0"
           >
             <img
-              src="https://customer-assets.emergentagent.com/job_castello-balcony/artifacts/mhc04wmi_Progetto%20senza%20titolo.png"
+              src="https://customer-assets.emergentagent.com/job_castello-balcony/artifacts/2kt46l6y_Progetto%20senza%20titolo%20%281%29.png"
               alt="Hinode Centro"
-              className="h-11 lg:h-[60px] w-auto"
+              className="h-14 lg:h-20 w-auto"
               style={{ 
                 objectFit: 'contain',
+                maxHeight: 'none',
+                maxWidth: 'none',
               }}
             />
           </button>

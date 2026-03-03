@@ -1,9 +1,11 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import { useLanguage } from '../context/LanguageContext';
 import { MapPin, Mail, Phone, Instagram, Facebook } from 'lucide-react';
 
 const Footer = () => {
   const { t } = useLanguage();
+  const navigate = useNavigate();
 
   const scrollToSection = (sectionId) => {
     const element = document.getElementById(sectionId);
@@ -122,6 +124,7 @@ const Footer = () => {
             <ul className="space-y-2 mb-6">
               <li>
                 <button
+                  onClick={() => navigate('/privacy')}
                   className="text-sm text-gray-600 hover:text-[#C2A878] transition-colors font-light"
                   style={{ fontFamily: "'Montserrat', sans-serif" }}
                 >
@@ -130,6 +133,7 @@ const Footer = () => {
               </li>
               <li>
                 <button
+                  onClick={() => navigate('/terms')}
                   className="text-sm text-gray-600 hover:text-[#C2A878] transition-colors font-light"
                   style={{ fontFamily: "'Montserrat', sans-serif" }}
                 >

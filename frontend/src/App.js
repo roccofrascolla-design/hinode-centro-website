@@ -1,42 +1,27 @@
 import React from "react";
 import "@/App.css";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { LanguageProvider } from "./context/LanguageContext";
 import { Toaster } from "./components/ui/sonner";
 import SEO from "./components/SEO";
-import Header from "./components/Header";
-import Hero from "./components/Hero";
-import WhyChoose from "./components/WhyChoose";
-import Apartment from "./components/Apartment";
-import Location from "./components/Location";
-import Experience from "./components/Experience";
-import Testimonials from "./components/Testimonials";
-import Gallery from "./components/Gallery";
-import Booking from "./components/Booking";
-import HouseRules from "./components/HouseRules";
-import FAQ from "./components/FAQ";
-import Footer from "./components/Footer";
+import HomePage from "./pages/HomePage";
+import PrivacyPage from "./pages/PrivacyPage";
+import TermsPage from "./pages/TermsPage";
 
 function App() {
   return (
     <LanguageProvider>
-      <SEO />
-      <div className="App">
-        <Header />
-        <main>
-          <Hero />
-          <WhyChoose />
-          <Apartment />
-          <Location />
-          <Experience />
-          <Testimonials />
-          <Gallery />
-          <Booking />
-          <HouseRules />
-          <FAQ />
-        </main>
-        <Footer />
-        <Toaster position="top-right" />
-      </div>
+      <Router>
+        <SEO />
+        <div className="App">
+          <Routes>
+            <Route path="/" element={<HomePage />} />
+            <Route path="/privacy" element={<PrivacyPage />} />
+            <Route path="/terms" element={<TermsPage />} />
+          </Routes>
+          <Toaster position="top-right" />
+        </div>
+      </Router>
     </LanguageProvider>
   );
 }

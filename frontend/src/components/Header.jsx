@@ -36,17 +36,16 @@ const Header = () => {
     >
       <div className="container mx-auto px-6 lg:px-12">
         <div className="flex items-center justify-between py-5">
-          {/* Logo - NEW VERSION (65px desktop, 40px mobile) */}
+          {/* Logo - Transparent version */}
           <button
             onClick={() => scrollToSection('hero')}
             className="flex items-center flex-shrink-0 pl-6 lg:pl-7"
           >
             <img
-              src="https://customer-assets.emergentagent.com/job_castello-balcony/artifacts/aupcv5j4_Progetto%20senza%20titolo.png"
+              src="https://customer-assets.emergentagent.com/job_castello-balcony/artifacts/mhc04wmi_Progetto%20senza%20titolo.png"
               alt="Hinode Centro"
-              className="h-10 lg:h-[65px] w-auto"
+              className="h-10 lg:h-12 w-auto"
               style={{ 
-                filter: 'drop-shadow(0 1px 2px rgba(0,0,0,0.1))',
                 objectFit: 'contain',
               }}
             />

@@ -39,12 +39,12 @@ const Header = () => {
           {/* Logo - Transparent version for improved readability */}
           <button
             onClick={() => scrollToSection('hero')}
-            className="flex items-center flex-shrink-0 pl-6 lg:pl-7"
+            className="flex items-center flex-shrink-0 pl-4 lg:pl-5"
           >
             <img
               src="https://customer-assets.emergentagent.com/job_castello-balcony/artifacts/efj976z8_logo%20uinode%20trasparente.png"
               alt="Hinode Centro"
-              className="h-11 lg:h-[70px] w-auto"
+              className="h-14 lg:h-[85px] w-auto"
               style={{ 
                 filter: 'drop-shadow(0 2px 3px rgba(0,0,0,0.15))',
                 objectFit: 'contain',

@@ -35,16 +35,16 @@ const Header = () => {
       }}
     >
       <div className="container mx-auto px-6 lg:px-12">
-        <div className="flex items-center justify-between py-5">
-          {/* Logo - Transparent version */}
+        <div className="flex items-center justify-between py-4 lg:py-6">
+          {/* Logo - Increased size for readability */}
           <button
             onClick={() => scrollToSection('hero')}
-            className="flex items-center flex-shrink-0 pl-6 lg:pl-7"
+            className="flex items-center flex-shrink-0 pl-6 lg:pl-8"
           >
             <img
               src="https://customer-assets.emergentagent.com/job_castello-balcony/artifacts/mhc04wmi_Progetto%20senza%20titolo.png"
               alt="Hinode Centro"
-              className="h-10 lg:h-12 w-auto"
+              className="h-11 lg:h-[60px] w-auto"
               style={{ 
                 objectFit: 'contain',
               }}

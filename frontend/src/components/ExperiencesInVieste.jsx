@@ -56,9 +56,7 @@ const ExperiencesInVieste = () => {
           {experiences.map((exp, index) => (
             <div
               key={index}
-              className={`group bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 ${
-                index === 3 ? 'lg:col-start-2' : ''
-              }`}
+              className="group bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-all duration-300"
             >
               {/* Image */}
               <div className="relative h-64 overflow-hidden">

@@ -26,7 +26,7 @@ const ExperiencesInVieste = () => {
       descKey: 'exp4Desc',
     },
     {
-      image: 'https://customer-assets.emergentagent.com/job_castello-balcony/artifacts/uz270r2i_DSC_3603.jpeg',
+      image: 'https://customer-assets.emergentagent.com/job_castello-balcony/artifacts/yon6xicw_2149428780.jpg',
       titleKey: 'exp5Title',
       descKey: 'exp5Desc',
     },

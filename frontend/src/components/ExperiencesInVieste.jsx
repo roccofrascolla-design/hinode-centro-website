@@ -52,7 +52,7 @@ const ExperiencesInVieste = () => {
         </div>
 
         {/* Experience Cards Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-8 max-w-7xl mx-auto">
           {experiences.map((exp, index) => (
             <div
               key={index}

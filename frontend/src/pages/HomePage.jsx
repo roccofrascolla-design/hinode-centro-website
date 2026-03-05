@@ -5,6 +5,7 @@ import WhyChoose from '../components/WhyChoose';
 import Apartment from '../components/Apartment';
 import Location from '../components/Location';
 import Experience from '../components/Experience';
+import ExperiencesInVieste from '../components/ExperiencesInVieste';
 import Testimonials from '../components/Testimonials';
 import Gallery from '../components/Gallery';
 import Booking from '../components/Booking';
@@ -22,6 +23,7 @@ const HomePage = () => {
         <Apartment />
         <Location />
         <Experience />
+        <ExperiencesInVieste />
         <Testimonials />
         <Gallery />
         <Booking />

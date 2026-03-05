@@ -147,6 +147,25 @@ export const translations = {
       moment4Text: 'Il castello si illumina. La cena in terrazza diventa un momento magico. Il mare sussurra storie antiche.',
     },
     
+    // Experiences in Vieste Section
+    experiencesVieste: {
+      title: 'Esperienze a Vieste',
+      subtitle: 'Idee e attività da vivere durante il soggiorno',
+      exp1Title: 'Tour in Barca & Grotte Marine',
+      exp1Desc: 'Esplora le meravigliose grotte marine lungo la costa di Vieste e ammira le scogliere a picco sul mare cristallino.',
+      exp2Title: 'Gita alle Isole Tremiti',
+      exp2Desc: 'Una giornata indimenticabile nell\'arcipelago delle Tremiti, tra acque turchesi e natura incontaminata.',
+      exp3Title: 'Centro Storico & Vista Castello',
+      exp3Desc: 'Passeggia tra i vicoli bianchi del borgo antico e goditi la vista mozzafiato sul Castello Svevo e il mare.',
+      exp4Title: 'Foresta Umbra & Natura',
+      exp4Desc: 'Immergiti nel verde della Foresta Umbra, polmone del Gargano, con sentieri naturalistici e aria pura.',
+      exp5Title: 'Degustazione Vini & Prodotti Locali',
+      exp5Desc: 'Scopri i sapori autentici della Puglia con degustazioni di vini, olio e prodotti tipici del territorio.',
+      exp6Title: 'Cena Tradizionale Pugliese',
+      exp6Desc: 'Assapora i piatti della tradizione pugliese nelle trattorie locali, tra orecchiette, focaccia e pesce fresco.',
+      whatsappTip: 'Scrivici su WhatsApp per consigli personalizzati sulle migliori esperienze a Vieste',
+    },
+    
     // Gallery Section
     gallery: {
       title: 'Galleria',
@@ -431,6 +450,25 @@ export const translations = {
       moment4Text: 'The castle lights up. Dinner on the terrace becomes a magical moment. The sea whispers ancient stories.',
     },
     
+    // Experiences in Vieste Section
+    experiencesVieste: {
+      title: 'Experiences in Vieste',
+      subtitle: 'Ideas and activities to enjoy during your stay',
+      exp1Title: 'Boat Tour & Sea Caves',
+      exp1Desc: 'Explore the stunning sea caves along the Vieste coast and admire the dramatic cliffs over crystal-clear waters.',
+      exp2Title: 'Tremiti Islands Day Trip',
+      exp2Desc: 'An unforgettable day in the Tremiti archipelago, surrounded by turquoise waters and pristine nature.',
+      exp3Title: 'Historic Center & Castle Views',
+      exp3Desc: 'Stroll through the white alleys of the old town and enjoy breathtaking views of the Swabian Castle and sea.',
+      exp4Title: 'Foresta Umbra Nature Escape',
+      exp4Desc: 'Immerse yourself in the green heart of Gargano, with nature trails and fresh mountain air.',
+      exp5Title: 'Local Wine & Food Tasting',
+      exp5Desc: 'Discover authentic Puglian flavors through wine, olive oil, and local product tastings.',
+      exp6Title: 'Traditional Puglian Dinner',
+      exp6Desc: 'Savor traditional Puglian dishes at local trattorias, from orecchiette to fresh seafood and focaccia.',
+      whatsappTip: 'Message us on WhatsApp for personalized tips on the best experiences in Vieste',
+    },
+    
     // Gallery Section
     gallery: {
       title: 'Gallery',
@@ -656,6 +694,23 @@ translations.fr = {
     moment4Title: 'Le Soir',
     moment4Text: 'Le château s\'illumine. Le dîner sur la terrasse devient un moment magique. La mer murmure des histoires anciennes.',
   },
+  experiencesVieste: {
+    title: 'Expériences à Vieste',
+    subtitle: 'Idées et activités à vivre pendant votre séjour',
+    exp1Title: 'Tour en Bateau & Grottes Marines',
+    exp1Desc: 'Explorez les magnifiques grottes marines le long de la côte de Vieste et admirez les falaises spectaculaires sur les eaux cristallines.',
+    exp2Title: 'Excursion aux Îles Tremiti',
+    exp2Desc: 'Une journée inoubliable dans l\'archipel des Tremiti, entouré d\'eaux turquoise et de nature préservée.',
+    exp3Title: 'Centre Historique & Vue Château',
+    exp3Desc: 'Promenez-vous dans les ruelles blanches de la vieille ville et profitez de vues à couper le souffle sur le château et la mer.',
+    exp4Title: 'Foresta Umbra & Nature',
+    exp4Desc: 'Plongez dans le cœur vert du Gargano, avec des sentiers naturels et l\'air pur de la montagne.',
+    exp5Title: 'Dégustation Vins & Produits Locaux',
+    exp5Desc: 'Découvrez les saveurs authentiques des Pouilles à travers des dégustations de vins, d\'huile d\'olive et de produits locaux.',
+    exp6Title: 'Dîner Traditionnel des Pouilles',
+    exp6Desc: 'Savourez les plats traditionnels des Pouilles dans les trattorias locales, des orecchiette aux fruits de mer frais et focaccia.',
+    whatsappTip: 'Écrivez-nous sur WhatsApp pour des conseils personnalisés sur les meilleures expériences à Vieste',
+  },
   gallery: {
     title: 'Galerie',
     subtitle: 'Découvrez votre refuge en bord de mer',
@@ -861,6 +916,23 @@ translations.de = {
     moment3Text: 'Fünf Minuten und Sie sind am Strand. Goldener Sand, kristallklares Wasser. Kommen Sie zurück, wann immer Sie wollen, ohne Eile.',
     moment4Title: 'Der Abend',
     moment4Text: 'Das Schloss leuchtet auf. Das Abendessen auf der Terrasse wird zu einem magischen Moment. Das Meer flüstert alte Geschichten.',
+  },
+  experiencesVieste: {
+    title: 'Erlebnisse in Vieste',
+    subtitle: 'Ideen und Aktivitäten für Ihren Aufenthalt',
+    exp1Title: 'Bootstour & Meereshöhlen',
+    exp1Desc: 'Erkunden Sie die wunderschönen Meereshöhlen entlang der Küste von Vieste und bewundern Sie die dramatischen Klippen über kristallklarem Wasser.',
+    exp2Title: 'Tagesausflug Tremiti-Inseln',
+    exp2Desc: 'Ein unvergesslicher Tag im Tremiti-Archipel, umgeben von türkisfarbenem Wasser und unberührter Natur.',
+    exp3Title: 'Historisches Zentrum & Schlossblick',
+    exp3Desc: 'Spazieren Sie durch die weißen Gassen der Altstadt und genießen Sie atemberaubende Ausblicke auf das Schloss und das Meer.',
+    exp4Title: 'Foresta Umbra Naturerlebnis',
+    exp4Desc: 'Tauchen Sie ein in das grüne Herz des Gargano, mit Naturpfaden und frischer Bergluft.',
+    exp5Title: 'Wein & Lokale Verkostung',
+    exp5Desc: 'Entdecken Sie authentische apulische Aromen durch Wein-, Olivenöl- und lokale Produktverkostungen.',
+    exp6Title: 'Traditionelles Apulisches Abendessen',
+    exp6Desc: 'Genießen Sie traditionelle apulische Gerichte in lokalen Trattorias, von Orecchiette bis zu frischen Meeresfrüchten und Focaccia.',
+    whatsappTip: 'Schreiben Sie uns auf WhatsApp für persönliche Tipps zu den besten Erlebnissen in Vieste',
   },
   gallery: {
     title: 'Galerie',
@@ -1126,6 +1198,25 @@ nav: {
     moment3Text: 'Cinco minutos y estás en la playa. Arena dorada, agua cristalina. Vuelves cuando quieras, sin prisa.',
     moment4Title: 'La Tarde',
     moment4Text: 'El castillo se ilumina. La cena en la terraza se convierte en un momento mágico. El mar susurra historias antiguas.',
+  },
+  
+  // Experiences in Vieste Section
+  experiencesVieste: {
+    title: 'Experiencias en Vieste',
+    subtitle: 'Ideas y actividades para disfrutar durante tu estancia',
+    exp1Title: 'Tour en Barco & Cuevas Marinas',
+    exp1Desc: 'Explora las impresionantes cuevas marinas a lo largo de la costa de Vieste y admira los acantilados sobre aguas cristalinas.',
+    exp2Title: 'Excursión a las Islas Tremiti',
+    exp2Desc: 'Un día inolvidable en el archipiélago de las Tremiti, rodeado de aguas turquesas y naturaleza virgen.',
+    exp3Title: 'Centro Histórico & Vistas al Castillo',
+    exp3Desc: 'Pasea por las callejuelas blancas del casco antiguo y disfruta de vistas impresionantes del castillo y el mar.',
+    exp4Title: 'Foresta Umbra & Naturaleza',
+    exp4Desc: 'Sumérgete en el corazón verde del Gargano, con senderos naturales y aire puro de montaña.',
+    exp5Title: 'Degustación de Vinos & Productos Locales',
+    exp5Desc: 'Descubre los sabores auténticos de Puglia a través de degustaciones de vinos, aceite de oliva y productos locales.',
+    exp6Title: 'Cena Tradicional Pugliese',
+    exp6Desc: 'Saborea los platos tradicionales de Puglia en las trattorias locales, desde orecchiette hasta mariscos frescos y focaccia.',
+    whatsappTip: 'Escríbenos por WhatsApp para consejos personalizados sobre las mejores experiencias en Vieste',
   },
   
   // Gallery Section

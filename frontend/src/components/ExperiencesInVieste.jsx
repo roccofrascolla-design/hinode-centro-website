@@ -30,11 +30,6 @@ const ExperiencesInVieste = () => {
       titleKey: 'exp5Title',
       descKey: 'exp5Desc',
     },
-    {
-      image: 'https://customer-assets.emergentagent.com/job_castello-balcony/artifacts/910tya1j_cena.webp',
-      titleKey: 'exp6Title',
-      descKey: 'exp6Desc',
-    },
   ];
 
   return (

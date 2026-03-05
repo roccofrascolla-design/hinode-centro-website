@@ -100,7 +100,7 @@ const Location = () => {
           <div className="bg-white rounded-lg shadow-lg overflow-hidden">
             <div className="aspect-w-16 aspect-h-9 h-96">
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3006.9!2d16.1768!3d41.8828!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1347d1ffb6e5e5e5%3A0x5e5e5e5e5e5e5e5!2sVia%20Santa%20Maria%20di%20Merino%2C%201%2C%2071019%20Vieste%20FG%2C%20Italy!5e0!3m2!1sen!2s!4v1234567890"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d185.65288524609068!2d16.177151120307013!3d41.88326093302371!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1337c96c2bfcbc7d%3A0x4c731f162951bd4f!2sHinode%20Centro%20%E2%80%93%20Luxury%20Sea%20View%20Apartment%20in%20Vieste!5e0!3m2!1sit!2sit!4v1772742423965!5m2!1sit!2sit"
                 width="100%"
                 height="100%"
                 style={{ border: 0 }}

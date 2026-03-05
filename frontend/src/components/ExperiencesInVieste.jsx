@@ -6,22 +6,22 @@ const ExperiencesInVieste = () => {
 
   const experiences = [
     {
-      image: 'https://customer-assets.emergentagent.com/job_castello-balcony/artifacts/0yfrjq5g_DSC_3618.jpeg',
+      image: 'https://customer-assets.emergentagent.com/job_castello-balcony/artifacts/ci2elq3j_tour%20in%20barac.jpg',
       titleKey: 'exp1Title',
       descKey: 'exp1Desc',
     },
     {
-      image: 'https://customer-assets.emergentagent.com/job_castello-balcony/artifacts/xm0tns05_DSC_3617.jpeg',
+      image: 'https://customer-assets.emergentagent.com/job_castello-balcony/artifacts/vtrcf5ey_tremiti.jpg',
       titleKey: 'exp2Title',
       descKey: 'exp2Desc',
     },
     {
-      image: 'https://customer-assets.emergentagent.com/job_castello-balcony/artifacts/87gs0z4i_DSC_3564.jpeg',
+      image: 'https://customer-assets.emergentagent.com/job_castello-balcony/artifacts/llur3pjn_centro%20storico.jpg',
       titleKey: 'exp3Title',
       descKey: 'exp3Desc',
     },
     {
-      image: 'https://customer-assets.emergentagent.com/job_castello-balcony/artifacts/zi597i9f_DSC_3555.jpeg',
+      image: 'https://customer-assets.emergentagent.com/job_castello-balcony/artifacts/vnvn06pe_forestaumbra1.jpg',
       titleKey: 'exp4Title',
       descKey: 'exp4Desc',
     },
@@ -31,7 +31,7 @@ const ExperiencesInVieste = () => {
       descKey: 'exp5Desc',
     },
     {
-      image: 'https://customer-assets.emergentagent.com/job_castello-balcony/artifacts/z0w881aj_DSC_3530.jpeg',
+      image: 'https://customer-assets.emergentagent.com/job_castello-balcony/artifacts/910tya1j_cena.webp',
       titleKey: 'exp6Title',
       descKey: 'exp6Desc',
     },

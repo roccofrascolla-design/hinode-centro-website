@@ -44,6 +44,9 @@ const SEO = () => {
     updateMetaTag('twitter:description', description);
     updateMetaTag('twitter:image', 'https://customer-assets.emergentagent.com/job_castello-balcony/artifacts/0yfrjq5g_DSC_3618.jpeg');
 
+    // Canonical Link
+    updateCanonicalLink('https://castello-balcony.preview.emergentagent.com/');
+
     // Structured Data - VacationRental Schema
     const structuredData = {
       '@context': 'https://schema.org',
@@ -113,6 +116,18 @@ const SEO = () => {
       element.setAttribute(attribute, name);
       element.setAttribute('content', content);
       document.head.appendChild(element);
+    }
+  };
+
+  const updateCanonicalLink = (url) => {
+    let link = document.querySelector('link[rel="canonical"]');
+    if (link) {
+      link.setAttribute('href', url);
+    } else {
+      link = document.createElement('link');
+      link.setAttribute('rel', 'canonical');
+      link.setAttribute('href', url);
+      document.head.appendChild(link);
     }
   };
 

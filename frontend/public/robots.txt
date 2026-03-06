@@ -1,0 +1,10 @@
+# Hinode Centro - Vacation Rental Website
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://castello-balcony.preview.emergentagent.com/sitemap.xml
+
+# Disallow admin or private pages (if any)
+Disallow: /admin/
+Disallow: /api/

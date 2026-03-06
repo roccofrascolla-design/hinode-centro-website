@@ -34,7 +34,7 @@ const SEO = () => {
     updateMetaTag('og:title', title, 'property');
     updateMetaTag('og:description', description, 'property');
     updateMetaTag('og:type', 'website', 'property');
-    updateMetaTag('og:url', 'https://castello-balcony.preview.emergentagent.com', 'property');
+    updateMetaTag('og:url', 'https://www.hinodecentro.com', 'property');
     updateMetaTag('og:image', 'https://customer-assets.emergentagent.com/job_castello-balcony/artifacts/0yfrjq5g_DSC_3618.jpeg', 'property');
     updateMetaTag('og:locale', language === 'it' ? 'it_IT' : language === 'en' ? 'en_US' : language === 'fr' ? 'fr_FR' : language === 'de' ? 'de_DE' : language === 'es' ? 'es_ES' : 'en_US', 'property');
 
@@ -45,7 +45,7 @@ const SEO = () => {
     updateMetaTag('twitter:image', 'https://customer-assets.emergentagent.com/job_castello-balcony/artifacts/0yfrjq5g_DSC_3618.jpeg');
 
     // Canonical Link
-    updateCanonicalLink('https://castello-balcony.preview.emergentagent.com/');
+    updateCanonicalLink('https://www.hinodecentro.com/');
 
     // Structured Data - VacationRental Schema
     const structuredData = {
@@ -73,7 +73,7 @@ const SEO = () => {
       },
       telephone: '+393405079259',
       email: 'hinodecentrovieste@gmail.com',
-      url: 'https://castello-balcony.preview.emergentagent.com',
+      url: 'https://www.hinodecentro.com',
       numberOfRooms: 2,
       floorSize: {
         '@type': 'QuantitativeValue',

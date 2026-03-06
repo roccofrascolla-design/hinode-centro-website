@@ -13,11 +13,11 @@ export const translations = {
     // Hero Section
     hero: {
       titleLine1: 'Hinode Centro',
-      titleLine2: 'Luxury Sea View Apartment in Vieste',
-      subtitle: 'Eleganza, storia e vista panoramica nel cuore del centro storico di Vieste',
-      cta: 'Verifica Disponibilità',
-      ctaSecondary: 'Scopri di Più',
-      trustLine: '⭐ Valutazione 9,8/10 su Booking.com · 🏆 Traveller Review Awards 2026',
+      subtitle: 'Il tuo balcone sul mare nel cuore di Vieste',
+      supportingText: 'Vista sul porto, sul faro e sul centro storico. Un soggiorno elegante da vivere a piedi, tra luce, mare e autenticità.',
+      cta: 'Prenota',
+      ctaSecondary: 'Scopri l\'appartamento',
+      trustLine: 'Recensioni eccellenti su Booking.com · Miglior tariffa prenotando direttamente',
     },
     
     // Why Choose Section
@@ -316,11 +316,11 @@ export const translations = {
     // Hero Section
     hero: {
       titleLine1: 'Hinode Centro',
-      titleLine2: 'Luxury Sea View Apartment in Vieste',
-      subtitle: 'Elegance, history, and panoramic views in the heart of Vieste\'s old town',
-      cta: 'Check Availability',
-      ctaSecondary: 'Discover More',
-      trustLine: '⭐ Rated 9.8/10 on Booking.com · 🏆 Traveller Review Awards 2026',
+      subtitle: 'Your balcony over the sea in the heart of Vieste',
+      supportingText: 'Views of the harbour, lighthouse and historic center. An elegant stay within walking distance, surrounded by light, sea and authenticity.',
+      cta: 'Book Now',
+      ctaSecondary: 'Discover the apartment',
+      trustLine: 'Excellent reviews on Booking.com · Best rate booking direct',
     },
     
     // Why Choose Section
@@ -617,11 +617,11 @@ translations.fr = {
   },
   hero: {
     titleLine1: 'Hinode Centro',
-    titleLine2: 'Appartement de Luxe avec Vue Mer à Vieste',
-    subtitle: 'Élégance, histoire et vues panoramiques au cœur de la vieille ville de Vieste',
-    cta: 'Vérifier Disponibilité',
-    ctaSecondary: 'Découvrir Plus',
-    trustLine: '⭐ Noté 9,8/10 sur Booking.com · 🏆 Traveller Review Awards 2026',
+    subtitle: 'Votre balcon sur la mer au cœur de Vieste',
+    supportingText: 'Vue sur le port, le phare et le centre historique. Un séjour élégant à vivre à pied, entre lumière, mer et authenticité.',
+    cta: 'Réserver',
+    ctaSecondary: 'Découvrir l\'appartement',
+    trustLine: 'Excellentes critiques sur Booking.com · Meilleur tarif en réservant directement',
   },
   whyChoose: {
     title: 'Pourquoi Choisir Hinode Centro',
@@ -840,11 +840,11 @@ translations.de = {
   },
   hero: {
     titleLine1: 'Hinode Centro',
-    titleLine2: 'Luxus-Meerblick-Wohnung in Vieste',
-    subtitle: 'Eleganz, Geschichte und Panoramablick im Herzen der Altstadt von Vieste',
-    cta: 'Verfügbarkeit Prüfen',
-    ctaSecondary: 'Mehr Entdecken',
-    trustLine: '⭐ Bewertung 9,8/10 auf Booking.com · 🏆 Traveller Review Awards 2026',
+    subtitle: 'Ihr Balkon über dem Meer im Herzen von Vieste',
+    supportingText: 'Blick auf den Hafen, den Leuchtturm und die Altstadt. Ein eleganter Aufenthalt zu Fuß erreichbar, umgeben von Licht, Meer und Authentizität.',
+    cta: 'Jetzt Buchen',
+    ctaSecondary: 'Wohnung entdecken',
+    trustLine: 'Ausgezeichnete Bewertungen auf Booking.com · Bester Tarif bei Direktbuchung',
   },
   whyChoose: {
     title: 'Warum Hinode Centro Wählen',
@@ -1066,11 +1066,11 @@ nav: {
   // Hero Section
   hero: {
     titleLine1: 'Hinode Centro',
-    titleLine2: 'Apartamento de Lujo con Vista al Mar en Vieste',
-    subtitle: 'Elegancia, historia y vistas panorámicas en el corazón del casco antiguo de Vieste',
-    cta: 'Consultar Disponibilidad',
-    ctaSecondary: 'Descubrir Más',
-    trustLine: '⭐ Valoración 9,8/10 en Booking.com · 🏆 Traveller Review Awards 2026',
+    subtitle: 'Tu balcón sobre el mar en el corazón de Vieste',
+    supportingText: 'Vista del puerto, el faro y el centro histórico. Una estancia elegante para vivir a pie, entre luz, mar y autenticidad.',
+    cta: 'Reservar Ahora',
+    ctaSecondary: 'Descubrir el apartamento',
+    trustLine: 'Excelentes reseñas en Booking.com · Mejor tarifa reservando directamente',
   },
   
   // Why Choose Section

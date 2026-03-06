@@ -17,7 +17,7 @@ const HomePage = () => {
   return (
     <>
       <Header />
-      <main>
+      <main className="space-y-24 lg:space-y-32">
         <Hero />
         <WhyChoose />
         <Apartment />

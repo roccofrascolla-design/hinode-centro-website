@@ -35,14 +35,14 @@ const SEO = () => {
     updateMetaTag('og:description', description, 'property');
     updateMetaTag('og:type', 'website', 'property');
     updateMetaTag('og:url', 'https://www.hinodecentro.com', 'property');
-    updateMetaTag('og:image', 'https://customer-assets.emergentagent.com/job_castello-balcony/artifacts/0yfrjq5g_DSC_3618.jpeg', 'property');
+    updateMetaTag('og:image', 'https://www.hinodecentro.com/og-image.jpg', 'property');
     updateMetaTag('og:locale', language === 'it' ? 'it_IT' : language === 'en' ? 'en_US' : language === 'fr' ? 'fr_FR' : language === 'de' ? 'de_DE' : language === 'es' ? 'es_ES' : 'en_US', 'property');
 
     // Twitter Card tags
     updateMetaTag('twitter:card', 'summary_large_image');
     updateMetaTag('twitter:title', title);
     updateMetaTag('twitter:description', description);
-    updateMetaTag('twitter:image', 'https://customer-assets.emergentagent.com/job_castello-balcony/artifacts/0yfrjq5g_DSC_3618.jpeg');
+    updateMetaTag('twitter:image', 'https://www.hinodecentro.com/og-image.jpg');
 
     // Canonical Link
     updateCanonicalLink('https://www.hinodecentro.com/');
@@ -54,7 +54,7 @@ const SEO = () => {
       name: 'Hinode Centro – Luxury Sea View Apartment in Vieste',
       description: description,
       image: [
-        'https://customer-assets.emergentagent.com/job_castello-balcony/artifacts/0yfrjq5g_DSC_3618.jpeg',
+        'https://www.hinodecentro.com/og-image.jpg',
         'https://customer-assets.emergentagent.com/job_castello-balcony/artifacts/z0w881aj_DSC_3530.jpeg',
         'https://customer-assets.emergentagent.com/job_castello-balcony/artifacts/1f2ipoxl_DSC_3551.jpeg',
       ],

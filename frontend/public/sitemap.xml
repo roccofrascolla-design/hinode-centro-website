@@ -4,21 +4,21 @@
     
     <!-- Homepage -->
     <url>
-        <loc>https://castello-balcony.preview.emergentagent.com/</loc>
+        <loc>https://www.hinodecentro.com/</loc>
         <lastmod>2025-03-06</lastmod>
         <changefreq>weekly</changefreq>
         <priority>1.0</priority>
         <!-- Language alternates -->
-        <xhtml:link rel="alternate" hreflang="it" href="https://castello-balcony.preview.emergentagent.com/?lang=it"/>
-        <xhtml:link rel="alternate" hreflang="en" href="https://castello-balcony.preview.emergentagent.com/?lang=en"/>
-        <xhtml:link rel="alternate" hreflang="fr" href="https://castello-balcony.preview.emergentagent.com/?lang=fr"/>
-        <xhtml:link rel="alternate" hreflang="de" href="https://castello-balcony.preview.emergentagent.com/?lang=de"/>
-        <xhtml:link rel="alternate" hreflang="es" href="https://castello-balcony.preview.emergentagent.com/?lang=es"/>
+        <xhtml:link rel="alternate" hreflang="it" href="https://www.hinodecentro.com/?lang=it"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.hinodecentro.com/?lang=en"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://www.hinodecentro.com/?lang=fr"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://www.hinodecentro.com/?lang=de"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://www.hinodecentro.com/?lang=es"/>
     </url>
     
     <!-- Privacy Page -->
     <url>
-        <loc>https://castello-balcony.preview.emergentagent.com/privacy</loc>
+        <loc>https://www.hinodecentro.com/privacy</loc>
         <lastmod>2025-03-06</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.3</priority>
@@ -26,7 +26,7 @@
     
     <!-- Terms Page -->
     <url>
-        <loc>https://castello-balcony.preview.emergentagent.com/terms</loc>
+        <loc>https://www.hinodecentro.com/terms</loc>
         <lastmod>2025-03-06</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.3</priority>

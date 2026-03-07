@@ -148,7 +148,49 @@ html {
 }
 
 
-/* Ken Burns Effect - Hero Background Slideshow */
+/* Hero Video Background */
+.hero-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  z-index: 0;
+}
+
+/* Fallback image - hidden by default, shown when video is not available */
+.hero-fallback {
+  z-index: -1;
+}
+
+/* Show fallback when video fails or is not supported */
+.hero-video:not([src]),
+.hero-video[style*="display: none"] ~ .hero-fallback {
+  z-index: 0;
+}
+
+/* Respect prefers-reduced-motion - disable video, show fallback */
+@media (prefers-reduced-motion: reduce) {
+  .hero-video {
+    display: none !important;
+  }
+  
+  .hero-fallback {
+    z-index: 0 !important;
+  }
+}
+
+/* Mobile optimization - consider showing static image on smaller devices for performance */
+@media (max-width: 768px) {
+  .hero-video {
+    /* Keep video on mobile but ensure it's optimized */
+    will-change: auto;
+  }
+}
+
+/* Ken Burns Effect - Hero Background Slideshow (DEPRECATED - kept for backwards compatibility) */
 .ken-burns-bg {
   position: absolute;
   top: 0;

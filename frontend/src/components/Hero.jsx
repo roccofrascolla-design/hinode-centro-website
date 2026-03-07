@@ -14,27 +14,31 @@ const Hero = () => {
 
   return (
     <section id="hero" className="relative h-screen w-full overflow-hidden">
-      {/* Ken Burns Background Slideshow */}
+      {/* Video Background with Fallback */}
       <div className="absolute inset-0">
-        {/* Image 1 - Rock Arch */}
+        {/* Video element */}
+        <video
+          autoPlay
+          loop
+          muted
+          playsInline
+          preload="metadata"
+          className="hero-video w-full h-full object-cover"
+          poster="/hero-1.jpg"
+          onError={(e) => {
+            // If video fails to load, hide it and show fallback
+            e.target.style.display = 'none';
+          }}
+        >
+          <source src="/hero-video.mp4" type="video/mp4" />
+        </video>
+        {/* Fallback image for browsers that don't support video or when video fails */}
         <div 
-          className="ken-burns-bg ken-burns-1"
+          className="hero-fallback absolute inset-0 w-full h-full"
           style={{
             backgroundImage: 'url(/hero-1.jpg)',
-          }}
-        />
-        {/* Image 2 - Cliff Structure */}
-        <div 
-          className="ken-burns-bg ken-burns-2"
-          style={{
-            backgroundImage: 'url(/hero-2.jpg)',
-          }}
-        />
-        {/* Image 3 - Main Cliff */}
-        <div 
-          className="ken-burns-bg ken-burns-3"
-          style={{
-            backgroundImage: 'url(/hero-3.jpg)',
+            backgroundSize: 'cover',
+            backgroundPosition: 'center',
           }}
         />
         <div className="absolute inset-0 bg-gradient-to-b from-black/50 via-black/40 to-black/60 z-10" />

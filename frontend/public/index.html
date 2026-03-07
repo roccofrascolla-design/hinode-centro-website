@@ -4,6 +4,19 @@
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="theme-color" content="#4A7C9E" />
+        
+        <!-- Conditional noindex for preview domain only -->
+        <script>
+            (function() {
+                var hostname = window.location.hostname;
+                if (hostname.includes('preview.emergentagent.com')) {
+                    var meta = document.createElement('meta');
+                    meta.name = 'robots';
+                    meta.content = 'noindex,nofollow,noarchive,nosnippet';
+                    document.head.appendChild(meta);
+                }
+            })();
+        </script>
         <meta name="description" content="Hinode Centro – Luxury Sea View Apartment in Vieste. Appartamento di lusso con vista mare nel centro storico di Vieste, Puglia. Esperienza boutique autentica." />
         <meta name="keywords" content="hinode centro, vieste apartment, sea view vieste, luxury apartment puglia, centro storico vieste, vacation rental vieste" />
         <meta name="author" content="Hinode Centro" />

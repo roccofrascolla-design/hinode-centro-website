@@ -161,7 +161,7 @@ html {
   will-change: transform, opacity;
 }
 
-/* Ken Burns Animation 1 - Castle/Cathedral (zoom to top-right) */
+/* Ken Burns Animation 1 - Rock Arch (zoom to center-right) */
 @keyframes kenBurns1 {
   0% {
     opacity: 0;
@@ -172,11 +172,11 @@ html {
   }
   30% {
     opacity: 1;
-    transform: scale(1.15) translate(-3%, -3%);
+    transform: scale(1.15) translate(-2%, 0);
   }
   33.33% {
     opacity: 0;
-    transform: scale(1.15) translate(-3%, -3%);
+    transform: scale(1.15) translate(-2%, 0);
   }
   100% {
     opacity: 0;
@@ -184,7 +184,7 @@ html {
   }
 }
 
-/* Ken Burns Animation 2 - Lighthouse (zoom to center) */
+/* Ken Burns Animation 2 - Cliff Structure (zoom to upper-center) */
 @keyframes kenBurns2 {
   0%, 30% {
     opacity: 0;
@@ -195,11 +195,11 @@ html {
   }
   63.33% {
     opacity: 1;
-    transform: scale(1.12);
+    transform: scale(1.12) translate(0, 2%);
   }
   66.66% {
     opacity: 0;
-    transform: scale(1.12);
+    transform: scale(1.12) translate(0, 2%);
   }
   100% {
     opacity: 0;
@@ -207,7 +207,7 @@ html {
   }
 }
 
-/* Ken Burns Animation 3 - Harbor (zoom to center-left) */
+/* Ken Burns Animation 3 - Main Cliff (zoom to center-left) */
 @keyframes kenBurns3 {
   0%, 63.33% {
     opacity: 0;

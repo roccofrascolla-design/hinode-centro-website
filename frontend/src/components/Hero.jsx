@@ -16,25 +16,25 @@ const Hero = () => {
     <section id="hero" className="relative h-screen w-full overflow-hidden">
       {/* Ken Burns Background Slideshow */}
       <div className="absolute inset-0">
-        {/* Image 1 - Castle/Cathedral */}
+        {/* Image 1 - Rock Arch */}
         <div 
           className="ken-burns-bg ken-burns-1"
           style={{
-            backgroundImage: 'url(/hero-castle.jpg)',
+            backgroundImage: 'url(/hero-1.jpg)',
           }}
         />
-        {/* Image 2 - Lighthouse */}
+        {/* Image 2 - Cliff Structure */}
         <div 
           className="ken-burns-bg ken-burns-2"
           style={{
-            backgroundImage: 'url(/hero-lighthouse.jpg)',
+            backgroundImage: 'url(/hero-2.jpg)',
           }}
         />
-        {/* Image 3 - Harbor */}
+        {/* Image 3 - Main Cliff */}
         <div 
           className="ken-burns-bg ken-burns-3"
           style={{
-            backgroundImage: 'url(/hero-harbor.jpg)',
+            backgroundImage: 'url(/hero-3.jpg)',
           }}
         />
         <div className="absolute inset-0 bg-gradient-to-b from-black/50 via-black/40 to-black/60 z-10" />

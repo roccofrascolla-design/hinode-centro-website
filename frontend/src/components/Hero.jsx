@@ -14,34 +14,38 @@ const Hero = () => {
 
   return (
     <section id="hero" className="relative h-screen w-full overflow-hidden">
-      {/* Background Video with Overlay */}
+      {/* Video Background with Fallback */}
       <div className="absolute inset-0">
-        {/* Video Background - Aerial View */}
+        {/* Video element */}
         <video
           autoPlay
-          muted
           loop
+          muted
           playsInline
-          className="w-full h-full object-cover"
-          poster="https://customer-assets.emergentagent.com/job_castello-balcony/artifacts/vujy3i5h_450922855.jpg"
+          preload="metadata"
+          className="hero-video w-full h-full object-cover"
+          poster="/hero-1.jpg"
+          onError={(e) => {
+            // If video fails to load, hide it and show fallback
+            e.target.style.display = 'none';
+          }}
         >
-          {/* Primary video source - Aerial view of Vieste */}
-          <source
-            src="https://customer-assets.emergentagent.com/job_castello-balcony/artifacts/4r0h5q6x_7031055_Above_Aerial_1280x720.mp4"
-            type="video/mp4"
-          />
-          {/* Fallback image for browsers that don't support video */}
-          <img
-            src="https://customer-assets.emergentagent.com/job_castello-balcony/artifacts/vujy3i5h_450922855.jpg"
-            alt="Vieste aerial view"
-            className="w-full h-full object-cover"
-          />
+          <source src="/hero-video.mp4" type="video/mp4" />
         </video>
-        <div className="absolute inset-0 bg-gradient-to-b from-black/50 via-black/40 to-black/60" />
+        {/* Fallback image for browsers that don't support video or when video fails */}
+        <div 
+          className="hero-fallback absolute inset-0 w-full h-full"
+          style={{
+            backgroundImage: 'url(/hero-1.jpg)',
+            backgroundSize: 'cover',
+            backgroundPosition: 'center',
+          }}
+        />
+        <div className="absolute inset-0 bg-gradient-to-b from-black/50 via-black/40 to-black/60 z-10" />
       </div>
 
       {/* Content */}
-      <div className="relative h-full flex items-center justify-center">
+      <div className="relative h-full flex items-center justify-center z-20">
         <div className="container mx-auto px-4 lg:px-8 text-center">
           <div className="max-w-5xl mx-auto space-y-10 animate-fade-in">
             {/* Main Title - Two Lines */}
@@ -102,7 +106,7 @@ const Hero = () => {
       {/* Scroll Indicator */}
       <button
         onClick={() => scrollToSection('why-choose')}
-        className="absolute bottom-8 left-1/2 transform -translate-x-1/2 text-white/70 hover:text-white transition-colors animate-bounce"
+        className="absolute bottom-8 left-1/2 transform -translate-x-1/2 text-white/70 hover:text-white transition-colors animate-bounce z-20"
       >
         <ChevronDown size={32} />
       </button>

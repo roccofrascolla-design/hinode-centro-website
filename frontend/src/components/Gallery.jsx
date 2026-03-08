@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useCallback } from 'react';
 import { useLanguage } from '../context/LanguageContext';
 import { ChevronLeft, ChevronRight, X } from 'lucide-react';
 
@@ -79,28 +79,28 @@ const Gallery = () => {
     },
   ];
 
-  // Navigation functions
+  // Navigation functions wrapped with useCallback for stable references
   const openLightbox = (index) => {
     setSelectedIndex(index);
   };
 
-  const closeLightbox = () => {
+  const closeLightbox = useCallback(() => {
     setSelectedIndex(null);
-  };
+  }, []);
 
-  const goToPrevious = (e) => {
+  const goToPrevious = useCallback((e) => {
     e?.stopPropagation();
     if (selectedIndex !== null) {
       setSelectedIndex((selectedIndex - 1 + images.length) % images.length);
     }
-  };
+  }, [selectedIndex, images.length]);
 
-  const goToNext = (e) => {
+  const goToNext = useCallback((e) => {
     e?.stopPropagation();
     if (selectedIndex !== null) {
       setSelectedIndex((selectedIndex + 1) % images.length);
     }
-  };
+  }, [selectedIndex, images.length]);
 
   // Keyboard navigation
   useEffect(() => {
@@ -118,7 +118,7 @@ const Gallery = () => {
 
     window.addEventListener('keydown', handleKeyDown);
     return () => window.removeEventListener('keydown', handleKeyDown);
-  }, [selectedIndex]);
+  }, [selectedIndex, closeLightbox, goToPrevious, goToNext]);
 
   // Touch swipe handling
   const handleTouchStart = (e) => {

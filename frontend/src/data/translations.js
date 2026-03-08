@@ -17,7 +17,7 @@ export const translations = {
       subtitle: 'Eleganza, storia e vista panoramica nel cuore del centro storico di Vieste',
       cta: 'Verifica Disponibilità',
       ctaSecondary: 'Scopri di Più',
-      trustLine: '⭐ Valutazione 9,8/10 su Booking.com · 🏆 Traveller Review Awards 2026',
+      trustLine: '🏆 Booking.com Traveller Review Awards 2026 · Altamente valutato su Booking.com',
     },
     
     // Why Choose Section
@@ -320,7 +320,7 @@ export const translations = {
       subtitle: 'Elegance, history, and panoramic views in the heart of Vieste\'s old town',
       cta: 'Check Availability',
       ctaSecondary: 'Discover More',
-      trustLine: '⭐ Rated 9.8/10 on Booking.com · 🏆 Traveller Review Awards 2026',
+      trustLine: '🏆 Booking.com Traveller Review Awards 2026 · Highly rated on Booking.com',
     },
     
     // Why Choose Section
@@ -621,7 +621,7 @@ translations.fr = {
     subtitle: 'Élégance, histoire et vues panoramiques au cœur de la vieille ville de Vieste',
     cta: 'Vérifier Disponibilité',
     ctaSecondary: 'Découvrir Plus',
-    trustLine: '⭐ Noté 9,8/10 sur Booking.com · 🏆 Traveller Review Awards 2026',
+    trustLine: '🏆 Booking.com Traveller Review Awards 2026 · Très bien noté sur Booking.com',
   },
   whyChoose: {
     title: 'Pourquoi Choisir Hinode Centro',
@@ -844,7 +844,7 @@ translations.de = {
     subtitle: 'Eleganz, Geschichte und Panoramablick im Herzen der Altstadt von Vieste',
     cta: 'Verfügbarkeit Prüfen',
     ctaSecondary: 'Mehr Entdecken',
-    trustLine: '⭐ Bewertung 9,8/10 auf Booking.com · 🏆 Traveller Review Awards 2026',
+    trustLine: '🏆 Booking.com Traveller Review Awards 2026 · Hoch bewertet auf Booking.com',
   },
   whyChoose: {
     title: 'Warum Hinode Centro Wählen',
@@ -1070,7 +1070,7 @@ nav: {
     subtitle: 'Elegancia, historia y vistas panorámicas en el corazón del casco antiguo de Vieste',
     cta: 'Consultar Disponibilidad',
     ctaSecondary: 'Descubrir Más',
-    trustLine: '⭐ Valoración 9,8/10 en Booking.com · 🏆 Traveller Review Awards 2026',
+    trustLine: '🏆 Booking.com Traveller Review Awards 2026 · Muy bien valorado en Booking.com',
   },
   
   // Why Choose Section

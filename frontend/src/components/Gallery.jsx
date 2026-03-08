@@ -1,9 +1,12 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { useLanguage } from '../context/LanguageContext';
+import { ChevronLeft, ChevronRight, X } from 'lucide-react';
 
 const Gallery = () => {
   const { t } = useLanguage();
-  const [selectedImage, setSelectedImage] = useState(null);
+  const [selectedIndex, setSelectedIndex] = useState(null);
+  const [touchStart, setTouchStart] = useState(0);
+  const [touchEnd, setTouchEnd] = useState(0);
 
   const images = [
     {
@@ -76,6 +79,73 @@ const Gallery = () => {
     },
   ];
 
+  // Navigation functions
+  const openLightbox = (index) => {
+    setSelectedIndex(index);
+  };
+
+  const closeLightbox = () => {
+    setSelectedIndex(null);
+  };
+
+  const goToPrevious = (e) => {
+    e?.stopPropagation();
+    if (selectedIndex !== null) {
+      setSelectedIndex((selectedIndex - 1 + images.length) % images.length);
+    }
+  };
+
+  const goToNext = (e) => {
+    e?.stopPropagation();
+    if (selectedIndex !== null) {
+      setSelectedIndex((selectedIndex + 1) % images.length);
+    }
+  };
+
+  // Keyboard navigation
+  useEffect(() => {
+    const handleKeyDown = (e) => {
+      if (selectedIndex === null) return;
+      
+      if (e.key === 'Escape') {
+        closeLightbox();
+      } else if (e.key === 'ArrowLeft') {
+        goToPrevious();
+      } else if (e.key === 'ArrowRight') {
+        goToNext();
+      }
+    };
+
+    window.addEventListener('keydown', handleKeyDown);
+    return () => window.removeEventListener('keydown', handleKeyDown);
+  }, [selectedIndex]);
+
+  // Touch swipe handling
+  const handleTouchStart = (e) => {
+    setTouchStart(e.targetTouches[0].clientX);
+  };
+
+  const handleTouchMove = (e) => {
+    setTouchEnd(e.targetTouches[0].clientX);
+  };
+
+  const handleTouchEnd = () => {
+    if (!touchStart || !touchEnd) return;
+    
+    const distance = touchStart - touchEnd;
+    const isLeftSwipe = distance > 50;
+    const isRightSwipe = distance < -50;
+
+    if (isLeftSwipe) {
+      goToNext();
+    } else if (isRightSwipe) {
+      goToPrevious();
+    }
+
+    setTouchStart(0);
+    setTouchEnd(0);
+  };
+
   return (
     <section id="gallery" className="py-20 lg:py-32 bg-white">
       <div className="container mx-auto px-4 lg:px-8">
@@ -102,7 +172,7 @@ const Gallery = () => {
               <div
                 key={index}
                 className="relative overflow-hidden rounded-lg shadow-md hover:shadow-2xl transition-all duration-500 cursor-pointer group"
-                onClick={() => setSelectedImage(image)}
+                onClick={() => openLightbox(index)}
               >
                 <div className="aspect-w-4 aspect-h-3">
                   <img
@@ -118,23 +188,64 @@ const Gallery = () => {
         </div>
       </div>
 
-      {/* Lightbox Modal */}
-      {selectedImage && (
+      {/* Lightbox Carousel Modal */}
+      {selectedIndex !== null && images[selectedIndex] && (
         <div
-          className="fixed inset-0 bg-black/90 z-50 flex items-center justify-center p-4 animate-fade-in"
-          onClick={() => setSelectedImage(null)}
+          className="fixed inset-0 bg-black/95 z-50 flex items-center justify-center p-4"
+          onClick={closeLightbox}
+          onTouchStart={handleTouchStart}
+          onTouchMove={handleTouchMove}
+          onTouchEnd={handleTouchEnd}
         >
+          {/* Close Button */}
           <button
-            className="absolute top-4 right-4 text-white text-4xl font-light hover:text-gray-300 transition-colors"
-            onClick={() => setSelectedImage(null)}
+            className="absolute top-4 right-4 z-60 text-white p-2 hover:bg-white/10 rounded-full transition-colors"
+            onClick={closeLightbox}
+            aria-label="Close lightbox"
           >
-            &times;
+            <X size={32} />
           </button>
-          <img
-            src={selectedImage.url}
-            alt={selectedImage.alt}
-            className="max-w-full max-h-full object-contain rounded-lg shadow-2xl"
-          />
+
+          {/* Image Counter */}
+          <div className="absolute top-4 left-1/2 transform -translate-x-1/2 text-white text-lg font-light z-60">
+            {selectedIndex + 1} / {images.length}
+          </div>
+
+          {/* Previous Button */}
+          <button
+            className="absolute left-4 top-1/2 transform -translate-y-1/2 text-white p-3 hover:bg-white/10 rounded-full transition-colors z-60 hidden md:block"
+            onClick={goToPrevious}
+            aria-label="Previous image"
+          >
+            <ChevronLeft size={40} />
+          </button>
+
+          {/* Image */}
+          <div 
+            className="max-w-[90vw] max-h-[90vh] flex items-center justify-center"
+            onClick={(e) => e.stopPropagation()}
+          >
+            <img
+              src={images[selectedIndex].url}
+              alt={images[selectedIndex].alt}
+              className="max-w-full max-h-[85vh] object-contain rounded-lg shadow-2xl"
+              style={{ userSelect: 'none' }}
+            />
+          </div>
+
+          {/* Next Button */}
+          <button
+            className="absolute right-4 top-1/2 transform -translate-y-1/2 text-white p-3 hover:bg-white/10 rounded-full transition-colors z-60 hidden md:block"
+            onClick={goToNext}
+            aria-label="Next image"
+          >
+            <ChevronRight size={40} />
+          </button>
+
+          {/* Mobile Swipe Hint (optional) */}
+          <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 text-white/60 text-sm md:hidden">
+            ← Swipe to navigate →
+          </div>
         </div>
       )}
     </section>

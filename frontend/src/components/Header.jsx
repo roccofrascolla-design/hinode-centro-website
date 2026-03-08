@@ -60,35 +60,35 @@ const Header = () => {
               className="text-[15px] font-normal text-[#3A3A3A] hover:text-[#C2A878] transition-colors duration-300"
               style={{ fontFamily: "'Montserrat', sans-serif" }}
             >
-              Home
+              {t.nav.home}
             </button>
             <button
               onClick={() => scrollToSection('apartment')}
               className="text-[15px] font-normal text-[#3A3A3A] hover:text-[#C2A878] transition-colors duration-300"
               style={{ fontFamily: "'Montserrat', sans-serif" }}
             >
-              Apartment
+              {t.nav.apartment}
             </button>
             <button
               onClick={() => scrollToSection('experience')}
               className="text-[15px] font-normal text-[#3A3A3A] hover:text-[#C2A878] transition-colors duration-300"
               style={{ fontFamily: "'Montserrat', sans-serif" }}
             >
-              Experience
+              {t.nav.experience}
             </button>
             <button
               onClick={() => scrollToSection('gallery')}
               className="text-[15px] font-normal text-[#3A3A3A] hover:text-[#C2A878] transition-colors duration-300"
               style={{ fontFamily: "'Montserrat', sans-serif" }}
             >
-              Gallery
+              {t.nav.gallery}
             </button>
             <button
               onClick={() => scrollToSection('booking')}
               className="text-[15px] font-normal text-[#3A3A3A] hover:text-[#C2A878] transition-colors duration-300"
               style={{ fontFamily: "'Montserrat', sans-serif" }}
             >
-              Contact
+              {t.nav.booking}
             </button>
           </nav>
 
@@ -157,35 +157,35 @@ const Header = () => {
                 className="text-left text-[15px] font-normal text-[#3A3A3A] hover:text-[#C2A878] py-2"
                 style={{ fontFamily: "'Montserrat', sans-serif" }}
               >
-                Home
+                {t.nav.home}
               </button>
               <button
                 onClick={() => scrollToSection('apartment')}
                 className="text-left text-[15px] font-normal text-[#3A3A3A] hover:text-[#C2A878] py-2"
                 style={{ fontFamily: "'Montserrat', sans-serif" }}
               >
-                Apartment
+                {t.nav.apartment}
               </button>
               <button
                 onClick={() => scrollToSection('experience')}
                 className="text-left text-[15px] font-normal text-[#3A3A3A] hover:text-[#C2A878] py-2"
                 style={{ fontFamily: "'Montserrat', sans-serif" }}
               >
-                Experience
+                {t.nav.experience}
               </button>
               <button
                 onClick={() => scrollToSection('gallery')}
                 className="text-left text-[15px] font-normal text-[#3A3A3A] hover:text-[#C2A878] py-2"
                 style={{ fontFamily: "'Montserrat', sans-serif" }}
               >
-                Gallery
+                {t.nav.gallery}
               </button>
               <button
                 onClick={() => scrollToSection('booking')}
                 className="text-left text-[15px] font-normal text-[#3A3A3A] hover:text-[#C2A878] py-2"
                 style={{ fontFamily: "'Montserrat', sans-serif" }}
               >
-                Contact
+                {t.nav.booking}
               </button>
               <button
                 onClick={() => scrollToSection('booking')}

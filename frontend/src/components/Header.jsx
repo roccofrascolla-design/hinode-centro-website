@@ -83,13 +83,6 @@ const Header = () => {
             >
               {t.nav.gallery}
             </button>
-            <button
-              onClick={() => scrollToSection('booking')}
-              className="text-[15px] font-normal text-[#3A3A3A] hover:text-[#C2A878] transition-colors duration-300"
-              style={{ fontFamily: "'Montserrat', sans-serif" }}
-            >
-              {t.nav.booking}
-            </button>
           </nav>
 
           {/* Right Section: Book Now + Language */}
@@ -179,13 +172,6 @@ const Header = () => {
                 style={{ fontFamily: "'Montserrat', sans-serif" }}
               >
                 {t.nav.gallery}
-              </button>
-              <button
-                onClick={() => scrollToSection('booking')}
-                className="text-left text-[15px] font-normal text-[#3A3A3A] hover:text-[#C2A878] py-2"
-                style={{ fontFamily: "'Montserrat', sans-serif" }}
-              >
-                {t.nav.booking}
               </button>
               <button
                 onClick={() => scrollToSection('booking')}

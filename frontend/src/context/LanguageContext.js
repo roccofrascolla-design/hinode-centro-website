@@ -15,10 +15,20 @@ export const LanguageProvider = ({ children }) => {
   const [language, setLanguage] = useState('it'); // Italian as default
 
   useEffect(() => {
-    // Check localStorage for saved preference
-    const savedLang = localStorage.getItem('hinodeLang');
-    if (savedLang && ['it', 'en', 'fr', 'de', 'es'].includes(savedLang)) {
-      setLanguage(savedLang);
+    // Priority: URL query param > localStorage > default (it)
+    const urlParams = new URLSearchParams(window.location.search);
+    const urlLang = urlParams.get('lang');
+    
+    if (urlLang && ['it', 'en', 'fr', 'de', 'es'].includes(urlLang)) {
+      // URL param takes priority
+      setLanguage(urlLang);
+      localStorage.setItem('hinodeLang', urlLang);
+    } else {
+      // Fallback to localStorage
+      const savedLang = localStorage.getItem('hinodeLang');
+      if (savedLang && ['it', 'en', 'fr', 'de', 'es'].includes(savedLang)) {
+        setLanguage(savedLang);
+      }
     }
   }, []);
 
